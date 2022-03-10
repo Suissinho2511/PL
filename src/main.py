@@ -4,37 +4,46 @@ import sys
 
 def main():
     input = sys.argv[1]
-    output = sys.argv[2]
+    #output = sys.argv[2]
     fi = open(input, "r", encoding="UTF-8")
-    fo = open(output, "w", encoding="UTF-8")
+    #fo = open(output, "w", encoding="UTF-8")
 
-    content = readHeaderv2(fi)
-    csvToJson(fo, content)
+    groups = getGroups(fi)
+    print(groups)
+    #csvToJson(fo, content)
     fi.close()
-    fo.close()
+    #fo.close()
     return
 
 
-def readHeader(file):
-    line = file.readline().strip()
-    split = line.split(",")
-    return split
+def getGroups(file):
+    #Grupo terá um nome geral
+    #dentro do grupo não pode conter nenhuma virgula nem enter
+    regex = r'(?:(?P<GROUP_ID>[^,\n]+),?)'
+    matches = re.finditer(regex, file.readline().strip())
+    groups = []
+    for match_obj in matches:
+        groups.append(match_obj.group('GROUP_ID'))
+    return groups
 
 
-def readHeaderv2(file):
-    alunoRegex = r'(?:\"(?P<id>.+)\",)(?:\"(?P<nome>.+)\",)(?:\"(?P<curso>.+)\",)(?:(?P<TPC1>\d+),)?(?:(?P<TPC2>\d+),)?(?:(?P<TPC3>\d+),)?(?:(?P<TPC4>\d+))?'
+
+def redContent(file):
+    regex = r'(?:(?P<ELEMENT>[^,\n]+),?)'
     dic = []
     for line in file:
-        match = re.search(alunoRegex, line)
+        match = re.search(regex, line)
         if match:
             dic.append(match.groupdict())
     return dic
 
-
 def csvToJson(fo, content):
     i = 0
+    #Begining of json file
     print("{", file=fo)
+
     for dic in content:
+
         if list(content)[-1] == dic:
             print("\t\"entry" + str(i) + "\"" + ": {", file=fo)
             for entry in dic.keys():
@@ -45,6 +54,7 @@ def csvToJson(fo, content):
                     print("\t\t" + "\"" + str(entry) + "\"" +
                           ": " + "\"" + str(dic[entry]) + "\",", file=fo)
             print("\t}", file=fo)
+
         else:
             print("\t\"entry" + str(i) + "\"" + ": {", file=fo)
             for entry in dic.keys():
