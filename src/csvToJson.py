@@ -17,7 +17,7 @@ def main():
     #output = sys.argv[2]
     fi = open(input, "r", encoding="UTF-8")
     #fo = open(output, "w", encoding="UTF-8")
-    groups = getGroups(fi)
+    groups = getFields(fi)
     print(groups)
     #dicToJson(fo, content)
     fi.close()
@@ -25,18 +25,43 @@ def main():
     return
 
 ################################################################################
+#FUNCTION:  Getting the regex expression
+################################################################################
+def getRegex():
+    #Textqualified -> in between double quotes
+    textqualified =  r'(?P<TEXTQUALIFIED>")?'
+    #if it found the first double quote character, then it will try to find the pair
+    is_textqualified = r'(?(TEXTQUALIFIED)")'
+
+    #Inside 'raw' fields we can't have commas or new lines
+    #We can have spaces in between words
+    raw_field = r'( *[^,\n ]+)+'
+    
+    #Fields can be textqualified (between double quotes) or raw
+    #If the group TEXTQUALIFIED exists, then we will accept whatever
+    field = r'(?P<FIELD>(?(TEXTQUALIFIED).*?|'+ raw_field +'))'
+    #A field can't have spaces before or after it's content, so we seperate it from
+    #the FIELD group.
+    #We could just use the .strip() function, but this way we can use regex
+    spaces = r' *'
+    #The comma is optional, since the last one doesnt have it
+    comma = r',?'
+
+    return spaces + textqualified + field + is_textqualified +  spaces + comma
+
+################################################################################
 #FUNCTION:  Converting the list of dictionaries to a json file
 ################################################################################
-def getGroups(file):
-    #Grupo terá um nome geral
-    #dentro do grupo não pode conter nenhuma virgula nem enter
-    regex = r'(?:(?P<GROUP_ID>[^,\n]+),?)'
-    matches = re.finditer(regex, file.readline().strip())
-    groups = []
-    for match_obj in matches:
-        groups.append(match_obj.group('GROUP_ID'))
-    return groups
+def getFields(file):
+    regex_pattern = getRegex()
 
+    matches = re.finditer(regex_pattern, file.readline())
+    fields = []
+
+    #Getting all the fields
+    for match_obj in matches:
+        fields.append(match_obj.group('FIELD'))
+    return fields
 
 ################################################################################
 #FUNCTION:  Getting each entry and put it in a dictionary
