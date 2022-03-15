@@ -8,6 +8,7 @@
 ################################################################################
 import re
 import sys
+import ply.lex
 
 ################################################################################
 #FUNCTION:  Main body that will control the program
@@ -17,7 +18,10 @@ def main():
     #output = sys.argv[2]
     fi = open(input, "r", encoding="UTF-8")
     #fo = open(output, "w", encoding="UTF-8")
+
+    #Getting the header
     groups = getFields(fi)
+
     print(groups)
     #dicToJson(fo, content)
     fi.close()
