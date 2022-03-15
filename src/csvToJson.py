@@ -6,26 +6,30 @@
 #           a83630 - Duarte Serrão
 #           a932xx - Vasco Oliveira
 ################################################################################
+from email.quoprimime import header_check
 import re
 import sys
-import ply.lex
+#import ply.lex
 
 ################################################################################
 #FUNCTION:  Main body that will control the program
 ################################################################################
 def main():
     input = sys.argv[1]
-    #output = sys.argv[2]
+    output = sys.argv[2]
     fi = open(input, "r", encoding="UTF-8")
-    #fo = open(output, "w", encoding="UTF-8")
+    fo = open(output, "w", encoding="UTF-8")
 
     #Getting the header
-    groups = getFields(fi)
+    line = fi.readline()
+    header = getFields(line)
 
-    print(groups)
-    #dicToJson(fo, content)
+    content = readContent(fi, header)
+
+    dicToJson(fo, content)
+
     fi.close()
-    #fo.close()
+    fo.close()
     return
 
 ################################################################################
@@ -56,10 +60,10 @@ def getRegex():
 ################################################################################
 #FUNCTION:  Converting the list of dictionaries to a json file
 ################################################################################
-def getFields(file):
+def getFields(line):
     regex_pattern = getRegex()
 
-    matches = re.finditer(regex_pattern, file.readline())
+    matches = re.finditer(regex_pattern, line)
     fields = []
 
     #Getting all the fields
@@ -70,13 +74,11 @@ def getFields(file):
 ################################################################################
 #FUNCTION:  Getting each entry and put it in a dictionary
 ################################################################################
-def readContent(file):
-    regex = r'(?:(?P<ELEMENT>[^,\n]+),?)'
+def readContent(file, header):
     dic = []
     for line in file:
-        match = re.search(regex, line)
-        if match:
-            dic.append(match.groupdict())
+        fields = getFields(line);
+        dic.append(dict(zip(header,fields)))
     return dic
 
 ################################################################################
