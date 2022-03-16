@@ -57,13 +57,23 @@ def getRegex():
 
     # Fields can be textqualified (between double quotes) or raw
     # If the group TEXTQUALIFIED exists, then we will accept whatever
-    field = r'(?P<FIELD>(?(TEXTQUALIFIED).*?|' + raw_field + '))'
+    field = r'(?P<FIELD>(?(TEXTQUALIFIED).*|' + raw_field + '))'
     # A field can't have spaces before or after it's content, so we seperate it from
     # the FIELD group.
     # We could just use the .strip() function, but this way we can use regex
     spaces = r' *'
     # The comma is optional, since the last one doesnt have it
     comma = r',?'
+    
+    lexer = lex.lex()
+    lexer.sum = 0
+
+    f = open("textoExercicio.txt", "r")
+    texto = f.read()
+    lexer.input(texto)
+
+    for tok in lexer:
+        print(tok)
 
     return spaces + textqualified + field + is_textqualified + spaces + comma
 
@@ -73,7 +83,7 @@ def getRegex():
 
 
 def getFields(line):
-    regex_pattern = getRegex()
+    getRegex()
 
     matches = re.finditer(regex_pattern, line)
     fields = []
