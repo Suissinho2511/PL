@@ -9,7 +9,7 @@
 from email.quoprimime import header_check
 import re
 import sys
-#import ply.lex
+import ply.lex as lex
 
 ################################################################################
 # FUNCTION:  Main body that will control the program
@@ -40,6 +40,12 @@ def main():
 
 
 def getRegex():
+    states = [
+        ("TEXT_QUALIFIED", "exclusive")
+    ]
+
+    tokens = ["COMMA", "FIELD", "LIST_SIZE"]
+
     # Textqualified -> in between double quotes
     textqualified = r'(?P<TEXTQUALIFIED>")?'
     # if it found the first double quote character, then it will try to find the pair
