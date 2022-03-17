@@ -1,46 +1,56 @@
-import sys
 import ply.lex as lex
-
-tokens = ["quotes", "field"]
+import re
 
 states = [
-    ("textQualified", "exclusive")
+    ("TEXTQUALIFIED", "exclusive")
+]
+
+tokens = [
+    "QUOTES", 
+    "FIELD"
 ]
 
 
-def t_field(t):
-    r'(\w)+'
-    print(t.value, end="")
-
-
-def t_textQualified_field(t):
+def t_FIELD(t):
+    #Estou a dizer que tem de começar com um caracter e que dps pode ter espaços pelo meio
+    r'[^\n", ](\ *[^,\n\ ]+)*'
+    t.lexer.fields.append(t.value)
+    
+def t_TEXTQUALIFIED_FIELD(t):
     r'[^"\n]+'
-    print(t.value, end="")
+    t.lexer.fields.append(t.value)
 
-
-def t_quotes(t):
+def t_QUOTES(t):
     r'"'
-    t.lexer.begin("textQualified")
+    t.lexer.begin("TEXTQUALIFIED")
 
 
-def t_textQualifield_quotes(t):
+def t_TEXTQUALIFIED_QUOTES(t):
     r'"'
     t.lexer.begin("INITIAL")
 
 
 def t_ANY_error(t):
-    print("ILLEGAL CHARACTER!" + '\'' + t.value[0] + '\'')
+    t.lexer.skip(1)
+    #print("ILLEGAL CHARACTER!" + '\'' + t.value[0] + '\'')
 
-
-t_ANY_ignore = r'\n ?,"'
+def t_newline(t):
+    r'\n+'
+        
+t_ANY_ignore = r','
 
 lexer = lex.lex()
 
+lexer.fields = []
+
 f = open("alunos.csv", "r", encoding="UTF8")
-texto = f.read()
+texto = f.readline()
 lexer.input(texto)
 
 for tok in lexer:
-    print(tok)
+    pass
+
+for field in lexer.fields:
+    print(field)
 
 f.close()
