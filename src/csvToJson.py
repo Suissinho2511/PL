@@ -6,7 +6,6 @@
 #           a83630 - Duarte Serrão
 #           a932xx - Vasco Oliveira
 ################################################################################
-from email.quoprimime import header_check
 import re
 import sys
 import ply.lex as lex
