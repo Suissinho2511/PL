@@ -1,31 +1,37 @@
 ################################################################################
-# NAME:      CSV TO JSON
-# PURPOSE:   Converting a generic csv file to a json file
+# NAME:     CSV TO JSON
+# PURPOSE:  Converting a generic csv file to a json file
 #GROUP:     5
-# ELEMENTS:  a93234 - Diogo Matos
+# ELEMENTS: a93234 - Diogo Matos
 #           a83630 - Duarte Serrão
-#           a932xx - Vasco Oliveira
+#           a93208 - Vasco Oliveira
 ################################################################################
 import sys
-import lexer
+from lexer import lexFunc
 
 ################################################################################
 # FUNCTION:  Main body that will control the program
 ################################################################################
-
-
 def main():
+    evalError(len(sys.argv) < 3 or len(sys.argv) > 3, "csvToJson <imput-file.csv> <output-file.json>")
+        
     input = sys.argv[1]
+    evalError(not input.endswith(".csv"), "Input file needs to end with '.csv'")
+    
     output = sys.argv[2]
+    evalError(not output.endswith(".json"), "Output file needs to end with '.json'")
+    
     fi = open(input, "r", encoding="UTF-8")
     fo = open(output, "w", encoding="UTF-8")
 
     # Getting the header
     line = fi.readline()
-    header = lexer.lexFunc(line, "header")
-
+    header = lexFunc(line, "HEADER")
+    
+    # Reading the content in dictinary format
     content = readContent(fi, header)
 
+    # Writing in JSON file
     dicToJson(fo, content)
 
     fi.close()
@@ -33,55 +39,63 @@ def main():
     return
 
 ################################################################################
+# FUNCTION: Evaluations a "deadly" predicate, terminating the program if true
+################################################################################
+def evalError(predicate, error = "Something ain't right"):
+    if predicate:
+        print(error)
+        quit()
+    return
+
+################################################################################
 # FUNCTION:  Getting each entry and put it in a dictionary
 ################################################################################
-
-
 def readContent(file, header):
     dic = []
     for line in file:
-        fields = lexer.lexFunc(line, "record")
+        fields = lexFunc(line)
         dic.append(dict(zip(header, fields)))
     return dic
+
 
 ################################################################################
 # FUNCTION:  Converting the list of dictionaries to a json file
 ################################################################################
-
-
 def dicToJson(fo, content):
     i = 0
+    dicSize = len(content)
     # Begining of json file
     print("{", file=fo)
 
-    for dic in content:
+    # We iterate through every record except the last
+    for dic in content[:-1]:
         print("\t\"entry" + str(i) + "\": {", file=fo)
         printKeys(dic, fo)
-
-        # If it is the end of the dictionary list, we just end the entry
-        if list(content)[-1] == dic:
-            print("\t}", file=fo)
-        # If its not, we go to the next entry
-        else:
-            print("\t},", file=fo)
-            i = i + 1
-
+        print("\t},", file=fo)
+        i = i + 1
+        
+    # The last record will have a slightly different behaviour
+    else:
+        print("\t\"entry" + str(i) + "\": {", file=fo)
+        printKeys(content[-1], fo)
+        print("\t}", file=fo)
+        
     # End of json file
     print("}", file=fo)
     return
 
+
 ################################################################################
 # FUNCTION:  Print to the file every entry of the dictionary
 ################################################################################
-
-
 def printKeys(dic, fo):
-    for entry in dic.keys():
-        line = "\t\t\"" + str(entry) + "\": \"" + str(dic[entry]) + "\""
-        # If it is NOT the end of the dictionary, we need a comma to let it know there are more keys
-        if list(dic)[-1] != entry:
-            line += ","
-        print(line, file=fo)
+    keys = list(dic.keys())
+    # we iterate through every key except the last
+    for entry in keys[:-1]:
+        print ("\t\t\"" + str(entry) + "\": \"" + str(dic[entry]) + "\",", file=fo)
+    # The last key will have a slightly different behaviour
+    else:
+        print ("\t\t\"" + str(keys[-1]) + "\": \"" + str(keys[-1]) + "\"", file=fo)
     return
 
 
