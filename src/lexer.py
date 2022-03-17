@@ -1,5 +1,4 @@
 import ply.lex as lex
-import re
 
 states = [
     ("TEXTQUALIFIED", "exclusive")
@@ -39,18 +38,16 @@ def t_newline(t):
         
 t_ANY_ignore = r','
 
-lexer = lex.lex()
 
-lexer.fields = []
+def lexFunc(line, mode):
+    lexer = lex.lex()
 
-f = open("alunos.csv", "r", encoding="UTF8")
-texto = f.readline()
-lexer.input(texto)
+    lexer.fields = []
 
-for tok in lexer:
-    pass
+    lexer.input(line)
 
-for field in lexer.fields:
-    print(field)
+    for tok in lexer:
+        pass
 
-f.close()
+    return lexer.fields
+

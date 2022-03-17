@@ -6,8 +6,8 @@
 #           a83630 - Duarte Serrão
 #           a932xx - Vasco Oliveira
 ################################################################################
+import re
 import sys
-import lexer
 
 ################################################################################
 # FUNCTION:  Main body that will control the program
@@ -22,7 +22,7 @@ def main():
 
     # Getting the header
     line = fi.readline()
-    header = lexer.lexFunc(line, "header")
+    header = getFields(line)
 
     content = readContent(fi, header)
 
@@ -33,6 +33,47 @@ def main():
     return
 
 ################################################################################
+# FUNCTION:  Regex pattern if we solved it without ply.lex
+################################################################################
+
+def getRegex():
+    # Textqualified -> in between double quotes
+    textqualified = r'(?P<TEXTQUALIFIED>")?'
+    # if it found the first double quote character, then it will try to find the pair
+    is_textqualified = r'(?(TEXTQUALIFIED)")'
+
+    # Inside 'raw' fields we can't have commas or new lines
+    # We can have spaces in between words
+    raw_field = r'( *[^,\n ]+)+'
+
+    # Fields can be textqualified (between double quotes) or raw
+    # If the group TEXTQUALIFIED exists, then we will accept whatever
+    field = r'(?P<FIELD>(?(TEXTQUALIFIED).*?|' + raw_field + '))'
+    # A field can't have spaces before or after it's content, so we seperate it from
+    # the FIELD group.
+    # We could just use the .strip() function, but this way we can use regex
+    spaces = r' *'
+    # The comma is optional, since the last one doesnt have it
+    comma = r',?'
+    
+    return spaces + textqualified + field + is_textqualified + spaces + comma
+
+################################################################################
+# FUNCTION:  Getting fields with regex pattern
+################################################################################
+
+def getFields(line):
+    regex_pattern = getRegex()
+
+    matches = re.finditer(regex_pattern, line)
+    fields = []
+
+    # Getting all the fields
+    for match_obj in matches:
+        fields.append(match_obj.group('FIELD'))
+    return fields
+
+################################################################################
 # FUNCTION:  Getting each entry and put it in a dictionary
 ################################################################################
 
@@ -40,7 +81,7 @@ def main():
 def readContent(file, header):
     dic = []
     for line in file:
-        fields = lexer.lexFunc(line, "record")
+        fields = getFields(line)
         dic.append(dict(zip(header, fields)))
     return dic
 
