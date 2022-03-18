@@ -4,9 +4,9 @@
 		"nome": "Aysha Melanie Gilberto",
 		"curso, sup": "LEI",
 		"tpc1": "12",
-		"tpc2": "8",
+		"tpc2": "",
 		"tpc3": "19",
-		"tpc4": "tpc4"
+		"tpc4": "8"
 	},
 	"entry1": {
 		"id do aluno!!": "a2",
@@ -15,7 +15,7 @@
 		"tpc1": "12",
 		"tpc2": "16",
 		"tpc3": "18",
-		"tpc4": "tpc4"
+		"tpc4": "20"
 	},
 	"entry2": {
 		"id do aluno!!": "a3",
@@ -24,7 +24,7 @@
 		"tpc1": "8",
 		"tpc2": "14",
 		"tpc3": "15",
-		"tpc4": "tpc4"
+		"tpc4": "14"
 	},
 	"entry3": {
 		"id do aluno!!": "a4",
@@ -33,7 +33,7 @@
 		"tpc1": "14",
 		"tpc2": "20",
 		"tpc3": "17",
-		"tpc4": "tpc4"
+		"tpc4": "11"
 	},
 	"entry4": {
 		"id do aluno!!": "a5",
@@ -42,7 +42,7 @@
 		"tpc1": "13",
 		"tpc2": "14",
 		"tpc3": "13",
-		"tpc4": "tpc4"
+		"tpc4": "17"
 	},
 	"entry5": {
 		"id do aluno!!": "a6",
@@ -51,7 +51,7 @@
 		"tpc1": "10",
 		"tpc2": "19",
 		"tpc3": "11",
-		"tpc4": "tpc4"
+		"tpc4": "14"
 	},
 	"entry6": {
 		"id do aluno!!": "a7",
@@ -60,7 +60,7 @@
 		"tpc1": "15",
 		"tpc2": "15",
 		"tpc3": "17",
-		"tpc4": "tpc4"
+		"tpc4": "16"
 	},
 	"entry7": {
 		"id do aluno!!": "a8",
@@ -69,7 +69,7 @@
 		"tpc1": "12",
 		"tpc2": "8",
 		"tpc3": "8",
-		"tpc4": "tpc4"
+		"tpc4": "18"
 	},
 	"entry8": {
 		"id do aluno!!": "a9",
@@ -78,7 +78,7 @@
 		"tpc1": "19",
 		"tpc2": "9",
 		"tpc3": "14",
-		"tpc4": "tpc4"
+		"tpc4": "10"
 	},
 	"entry9": {
 		"id do aluno!!": "a10",
@@ -87,7 +87,7 @@
 		"tpc1": "9",
 		"tpc2": "14",
 		"tpc3": "20",
-		"tpc4": "tpc4"
+		"tpc4": "13"
 	},
 	"entry10": {
 		"id do aluno!!": "a11",
@@ -96,7 +96,7 @@
 		"tpc1": "11",
 		"tpc2": "8",
 		"tpc3": "14",
-		"tpc4": "tpc4"
+		"tpc4": "11"
 	},
 	"entry11": {
 		"id do aluno!!": "a12",
@@ -105,7 +105,7 @@
 		"tpc1": "17",
 		"tpc2": "10",
 		"tpc3": "16",
-		"tpc4": "tpc4"
+		"tpc4": "16"
 	},
 	"entry12": {
 		"id do aluno!!": "a13",
@@ -114,7 +114,7 @@
 		"tpc1": "15",
 		"tpc2": "15",
 		"tpc3": "18",
-		"tpc4": "tpc4"
+		"tpc4": "19"
 	},
 	"entry13": {
 		"id do aluno!!": "a14",
@@ -123,7 +123,7 @@
 		"tpc1": "10",
 		"tpc2": "14",
 		"tpc3": "17",
-		"tpc4": "tpc4"
+		"tpc4": "15"
 	},
 	"entry14": {
 		"id do aluno!!": "a15",
@@ -132,7 +132,7 @@
 		"tpc1": "16",
 		"tpc2": "9",
 		"tpc3": "18",
-		"tpc4": "tpc4"
+		"tpc4": "10"
 	},
 	"entry15": {
 		"id do aluno!!": "a16",
@@ -141,7 +141,7 @@
 		"tpc1": "20",
 		"tpc2": "18",
 		"tpc3": "9",
-		"tpc4": "tpc4"
+		"tpc4": "14"
 	},
 	"entry16": {
 		"id do aluno!!": "a17",
@@ -150,7 +150,7 @@
 		"tpc1": "19",
 		"tpc2": "13",
 		"tpc3": "9",
-		"tpc4": "tpc4"
+		"tpc4": "10"
 	},
 	"entry17": {
 		"id do aluno!!": "a18",
@@ -159,7 +159,7 @@
 		"tpc1": "18",
 		"tpc2": "18",
 		"tpc3": "17",
-		"tpc4": "tpc4"
+		"tpc4": "8"
 	},
 	"entry18": {
 		"id do aluno!!": "a19",
@@ -168,7 +168,7 @@
 		"tpc1": "14",
 		"tpc2": "10",
 		"tpc3": "18",
-		"tpc4": "tpc4"
+		"tpc4": "13"
 	},
 	"entry19": {
 		"id do aluno!!": "a20",
@@ -177,7 +177,7 @@
 		"tpc1": "15",
 		"tpc2": "14",
 		"tpc3": "11",
-		"tpc4": "tpc4"
+		"tpc4": "12"
 	},
 	"entry20": {
 		"id do aluno!!": "a21",
@@ -186,7 +186,7 @@
 		"tpc1": "17",
 		"tpc2": "12",
 		"tpc3": "10",
-		"tpc4": "tpc4"
+		"tpc4": "20"
 	},
 	"entry21": {
 		"id do aluno!!": "a22",
@@ -195,7 +195,7 @@
 		"tpc1": "11",
 		"tpc2": "16",
 		"tpc3": "8",
-		"tpc4": "tpc4"
+		"tpc4": "16"
 	},
 	"entry22": {
 		"id do aluno!!": "a23",
@@ -204,7 +204,7 @@
 		"tpc1": "19",
 		"tpc2": "16",
 		"tpc3": "8",
-		"tpc4": "tpc4"
+		"tpc4": "18"
 	},
 	"entry23": {
 		"id do aluno!!": "a24",
@@ -213,7 +213,7 @@
 		"tpc1": "17",
 		"tpc2": "13",
 		"tpc3": "14",
-		"tpc4": "tpc4"
+		"tpc4": "12"
 	},
 	"entry24": {
 		"id do aluno!!": "a25",
@@ -222,7 +222,7 @@
 		"tpc1": "19",
 		"tpc2": "11",
 		"tpc3": "8",
-		"tpc4": "tpc4"
+		"tpc4": "19"
 	},
 	"entry25": {
 		"id do aluno!!": "a26",
@@ -231,7 +231,7 @@
 		"tpc1": "10",
 		"tpc2": "16",
 		"tpc3": "8",
-		"tpc4": "tpc4"
+		"tpc4": "13"
 	},
 	"entry26": {
 		"id do aluno!!": "a27",
@@ -240,7 +240,7 @@
 		"tpc1": "13",
 		"tpc2": "10",
 		"tpc3": "16",
-		"tpc4": "tpc4"
+		"tpc4": "10"
 	},
 	"entry27": {
 		"id do aluno!!": "a28",
@@ -249,7 +249,7 @@
 		"tpc1": "18",
 		"tpc2": "18",
 		"tpc3": "8",
-		"tpc4": "tpc4"
+		"tpc4": "9"
 	},
 	"entry28": {
 		"id do aluno!!": "a29",
@@ -258,7 +258,7 @@
 		"tpc1": "12",
 		"tpc2": "16",
 		"tpc3": "15",
-		"tpc4": "tpc4"
+		"tpc4": "13"
 	},
 	"entry29": {
 		"id do aluno!!": "a30",
@@ -267,7 +267,7 @@
 		"tpc1": "8",
 		"tpc2": "12",
 		"tpc3": "20",
-		"tpc4": "tpc4"
+		"tpc4": "11"
 	},
 	"entry30": {
 		"id do aluno!!": "a31",
@@ -276,7 +276,7 @@
 		"tpc1": "12",
 		"tpc2": "16",
 		"tpc3": "20",
-		"tpc4": "tpc4"
+		"tpc4": "16"
 	},
 	"entry31": {
 		"id do aluno!!": "a32",
@@ -285,7 +285,7 @@
 		"tpc1": "20",
 		"tpc2": "19",
 		"tpc3": "13",
-		"tpc4": "tpc4"
+		"tpc4": "18"
 	},
 	"entry32": {
 		"id do aluno!!": "a33",
@@ -294,7 +294,7 @@
 		"tpc1": "19",
 		"tpc2": "13",
 		"tpc3": "8",
-		"tpc4": "tpc4"
+		"tpc4": "10"
 	},
 	"entry33": {
 		"id do aluno!!": "a34",
@@ -303,7 +303,7 @@
 		"tpc1": "14",
 		"tpc2": "19",
 		"tpc3": "13",
-		"tpc4": "tpc4"
+		"tpc4": "14"
 	},
 	"entry34": {
 		"id do aluno!!": "a35",
@@ -312,7 +312,7 @@
 		"tpc1": "8",
 		"tpc2": "13",
 		"tpc3": "19",
-		"tpc4": "tpc4"
+		"tpc4": "15"
 	},
 	"entry35": {
 		"id do aluno!!": "a36",
@@ -321,7 +321,7 @@
 		"tpc1": "19",
 		"tpc2": "18",
 		"tpc3": "17",
-		"tpc4": "tpc4"
+		"tpc4": "12"
 	},
 	"entry36": {
 		"id do aluno!!": "a37",
@@ -330,7 +330,7 @@
 		"tpc1": "18",
 		"tpc2": "18",
 		"tpc3": "10",
-		"tpc4": "tpc4"
+		"tpc4": "19"
 	},
 	"entry37": {
 		"id do aluno!!": "a38",
@@ -339,7 +339,7 @@
 		"tpc1": "13",
 		"tpc2": "16",
 		"tpc3": "15",
-		"tpc4": "tpc4"
+		"tpc4": "17"
 	},
 	"entry38": {
 		"id do aluno!!": "a39",
@@ -348,7 +348,7 @@
 		"tpc1": "17",
 		"tpc2": "14",
 		"tpc3": "13",
-		"tpc4": "tpc4"
+		"tpc4": "8"
 	},
 	"entry39": {
 		"id do aluno!!": "a40",
@@ -357,7 +357,7 @@
 		"tpc1": "17",
 		"tpc2": "9",
 		"tpc3": "16",
-		"tpc4": "tpc4"
+		"tpc4": "18"
 	},
 	"entry40": {
 		"id do aluno!!": "a41",
@@ -366,7 +366,7 @@
 		"tpc1": "16",
 		"tpc2": "18",
 		"tpc3": "18",
-		"tpc4": "tpc4"
+		"tpc4": "15"
 	},
 	"entry41": {
 		"id do aluno!!": "a42",
@@ -375,7 +375,7 @@
 		"tpc1": "19",
 		"tpc2": "16",
 		"tpc3": "14",
-		"tpc4": "tpc4"
+		"tpc4": "15"
 	},
 	"entry42": {
 		"id do aluno!!": "a43",
@@ -384,7 +384,7 @@
 		"tpc1": "19",
 		"tpc2": "8",
 		"tpc3": "15",
-		"tpc4": "tpc4"
+		"tpc4": "11"
 	},
 	"entry43": {
 		"id do aluno!!": "a44",
@@ -393,7 +393,7 @@
 		"tpc1": "17",
 		"tpc2": "9",
 		"tpc3": "17",
-		"tpc4": "tpc4"
+		"tpc4": "18"
 	},
 	"entry44": {
 		"id do aluno!!": "a45",
@@ -402,7 +402,7 @@
 		"tpc1": "20",
 		"tpc2": "17",
 		"tpc3": "19",
-		"tpc4": "tpc4"
+		"tpc4": "11"
 	},
 	"entry45": {
 		"id do aluno!!": "a46",
@@ -411,7 +411,7 @@
 		"tpc1": "15",
 		"tpc2": "18",
 		"tpc3": "12",
-		"tpc4": "tpc4"
+		"tpc4": "16"
 	},
 	"entry46": {
 		"id do aluno!!": "a47",
@@ -420,7 +420,7 @@
 		"tpc1": "20",
 		"tpc2": "16",
 		"tpc3": "19",
-		"tpc4": "tpc4"
+		"tpc4": "17"
 	},
 	"entry47": {
 		"id do aluno!!": "a48",
@@ -429,7 +429,7 @@
 		"tpc1": "14",
 		"tpc2": "14",
 		"tpc3": "12",
-		"tpc4": "tpc4"
+		"tpc4": "8"
 	},
 	"entry48": {
 		"id do aluno!!": "a49",
@@ -438,7 +438,7 @@
 		"tpc1": "10",
 		"tpc2": "9",
 		"tpc3": "20",
-		"tpc4": "tpc4"
+		"tpc4": "12"
 	},
 	"entry49": {
 		"id do aluno!!": "a50",
@@ -447,7 +447,7 @@
 		"tpc1": "9",
 		"tpc2": "9",
 		"tpc3": "9",
-		"tpc4": "tpc4"
+		"tpc4": "12"
 	},
 	"entry50": {
 		"id do aluno!!": "a51",
@@ -456,7 +456,7 @@
 		"tpc1": "14",
 		"tpc2": "8",
 		"tpc3": "12",
-		"tpc4": "tpc4"
+		"tpc4": "14"
 	},
 	"entry51": {
 		"id do aluno!!": "a52",
@@ -465,7 +465,7 @@
 		"tpc1": "18",
 		"tpc2": "9",
 		"tpc3": "16",
-		"tpc4": "tpc4"
+		"tpc4": "14"
 	},
 	"entry52": {
 		"id do aluno!!": "a53",
@@ -474,7 +474,7 @@
 		"tpc1": "20",
 		"tpc2": "16",
 		"tpc3": "10",
-		"tpc4": "tpc4"
+		"tpc4": "13"
 	},
 	"entry53": {
 		"id do aluno!!": "a54",
@@ -483,7 +483,7 @@
 		"tpc1": "18",
 		"tpc2": "19",
 		"tpc3": "15",
-		"tpc4": "tpc4"
+		"tpc4": "11"
 	},
 	"entry54": {
 		"id do aluno!!": "a55",
@@ -492,7 +492,7 @@
 		"tpc1": "9",
 		"tpc2": "17",
 		"tpc3": "12",
-		"tpc4": "tpc4"
+		"tpc4": "20"
 	},
 	"entry55": {
 		"id do aluno!!": "a56",
@@ -501,7 +501,7 @@
 		"tpc1": "18",
 		"tpc2": "18",
 		"tpc3": "13",
-		"tpc4": "tpc4"
+		"tpc4": "20"
 	},
 	"entry56": {
 		"id do aluno!!": "a57",
@@ -510,7 +510,7 @@
 		"tpc1": "17",
 		"tpc2": "16",
 		"tpc3": "9",
-		"tpc4": "tpc4"
+		"tpc4": "13"
 	},
 	"entry57": {
 		"id do aluno!!": "a58",
@@ -519,7 +519,7 @@
 		"tpc1": "15",
 		"tpc2": "8",
 		"tpc3": "9",
-		"tpc4": "tpc4"
+		"tpc4": "13"
 	},
 	"entry58": {
 		"id do aluno!!": "a59",
@@ -528,7 +528,7 @@
 		"tpc1": "9",
 		"tpc2": "15",
 		"tpc3": "8",
-		"tpc4": "tpc4"
+		"tpc4": "13"
 	},
 	"entry59": {
 		"id do aluno!!": "a60",
@@ -537,7 +537,7 @@
 		"tpc1": "17",
 		"tpc2": "19",
 		"tpc3": "19",
-		"tpc4": "tpc4"
+		"tpc4": "11"
 	},
 	"entry60": {
 		"id do aluno!!": "a61",
@@ -546,7 +546,7 @@
 		"tpc1": "16",
 		"tpc2": "19",
 		"tpc3": "16",
-		"tpc4": "tpc4"
+		"tpc4": "12"
 	},
 	"entry61": {
 		"id do aluno!!": "a62",
@@ -555,7 +555,7 @@
 		"tpc1": "13",
 		"tpc2": "20",
 		"tpc3": "8",
-		"tpc4": "tpc4"
+		"tpc4": "16"
 	},
 	"entry62": {
 		"id do aluno!!": "a63",
@@ -564,7 +564,7 @@
 		"tpc1": "8",
 		"tpc2": "12",
 		"tpc3": "20",
-		"tpc4": "tpc4"
+		"tpc4": "18"
 	},
 	"entry63": {
 		"id do aluno!!": "a64",
@@ -573,7 +573,7 @@
 		"tpc1": "16",
 		"tpc2": "19",
 		"tpc3": "8",
-		"tpc4": "tpc4"
+		"tpc4": "14"
 	},
 	"entry64": {
 		"id do aluno!!": "a65",
@@ -582,7 +582,7 @@
 		"tpc1": "19",
 		"tpc2": "11",
 		"tpc3": "17",
-		"tpc4": "tpc4"
+		"tpc4": "8"
 	},
 	"entry65": {
 		"id do aluno!!": "a66",
@@ -591,7 +591,7 @@
 		"tpc1": "12",
 		"tpc2": "15",
 		"tpc3": "13",
-		"tpc4": "tpc4"
+		"tpc4": "9"
 	},
 	"entry66": {
 		"id do aluno!!": "a67",
@@ -600,7 +600,7 @@
 		"tpc1": "15",
 		"tpc2": "14",
 		"tpc3": "17",
-		"tpc4": "tpc4"
+		"tpc4": "12"
 	},
 	"entry67": {
 		"id do aluno!!": "a68",
@@ -609,7 +609,7 @@
 		"tpc1": "15",
 		"tpc2": "14",
 		"tpc3": "11",
-		"tpc4": "tpc4"
+		"tpc4": "15"
 	},
 	"entry68": {
 		"id do aluno!!": "a69",
@@ -618,7 +618,7 @@
 		"tpc1": "17",
 		"tpc2": "12",
 		"tpc3": "20",
-		"tpc4": "tpc4"
+		"tpc4": "12"
 	},
 	"entry69": {
 		"id do aluno!!": "a70",
@@ -627,7 +627,7 @@
 		"tpc1": "18",
 		"tpc2": "11",
 		"tpc3": "19",
-		"tpc4": "tpc4"
+		"tpc4": "8"
 	},
 	"entry70": {
 		"id do aluno!!": "a71",
@@ -636,7 +636,7 @@
 		"tpc1": "11",
 		"tpc2": "10",
 		"tpc3": "8",
-		"tpc4": "tpc4"
+		"tpc4": "14"
 	},
 	"entry71": {
 		"id do aluno!!": "a72",
@@ -645,7 +645,7 @@
 		"tpc1": "10",
 		"tpc2": "17",
 		"tpc3": "8",
-		"tpc4": "tpc4"
+		"tpc4": "19"
 	},
 	"entry72": {
 		"id do aluno!!": "a73",
@@ -654,7 +654,7 @@
 		"tpc1": "16",
 		"tpc2": "19",
 		"tpc3": "20",
-		"tpc4": "tpc4"
+		"tpc4": "10"
 	},
 	"entry73": {
 		"id do aluno!!": "a74",
@@ -663,7 +663,7 @@
 		"tpc1": "18",
 		"tpc2": "19",
 		"tpc3": "18",
-		"tpc4": "tpc4"
+		"tpc4": "15"
 	},
 	"entry74": {
 		"id do aluno!!": "a75",
@@ -672,7 +672,7 @@
 		"tpc1": "8",
 		"tpc2": "18",
 		"tpc3": "9",
-		"tpc4": "tpc4"
+		"tpc4": "18"
 	},
 	"entry75": {
 		"id do aluno!!": "a76",
@@ -681,7 +681,7 @@
 		"tpc1": "16",
 		"tpc2": "10",
 		"tpc3": "14",
-		"tpc4": "tpc4"
+		"tpc4": "12"
 	},
 	"entry76": {
 		"id do aluno!!": "a77",
@@ -690,7 +690,7 @@
 		"tpc1": "14",
 		"tpc2": "10",
 		"tpc3": "15",
-		"tpc4": "tpc4"
+		"tpc4": "19"
 	},
 	"entry77": {
 		"id do aluno!!": "a78",
@@ -699,7 +699,7 @@
 		"tpc1": "8",
 		"tpc2": "15",
 		"tpc3": "19",
-		"tpc4": "tpc4"
+		"tpc4": "9"
 	},
 	"entry78": {
 		"id do aluno!!": "a79",
@@ -708,7 +708,7 @@
 		"tpc1": "13",
 		"tpc2": "18",
 		"tpc3": "14",
-		"tpc4": "tpc4"
+		"tpc4": "18"
 	},
 	"entry79": {
 		"id do aluno!!": "a80",
@@ -717,7 +717,7 @@
 		"tpc1": "17",
 		"tpc2": "20",
 		"tpc3": "17",
-		"tpc4": "tpc4"
+		"tpc4": "18"
 	},
 	"entry80": {
 		"id do aluno!!": "a81",
@@ -726,7 +726,7 @@
 		"tpc1": "17",
 		"tpc2": "9",
 		"tpc3": "16",
-		"tpc4": "tpc4"
+		"tpc4": "19"
 	},
 	"entry81": {
 		"id do aluno!!": "a82",
@@ -735,7 +735,7 @@
 		"tpc1": "16",
 		"tpc2": "19",
 		"tpc3": "15",
-		"tpc4": "tpc4"
+		"tpc4": "8"
 	},
 	"entry82": {
 		"id do aluno!!": "a83",
@@ -744,7 +744,7 @@
 		"tpc1": "11",
 		"tpc2": "20",
 		"tpc3": "16",
-		"tpc4": "tpc4"
+		"tpc4": "8"
 	},
 	"entry83": {
 		"id do aluno!!": "a84",
@@ -753,7 +753,7 @@
 		"tpc1": "20",
 		"tpc2": "19",
 		"tpc3": "10",
-		"tpc4": "tpc4"
+		"tpc4": "19"
 	},
 	"entry84": {
 		"id do aluno!!": "a85",
@@ -762,7 +762,7 @@
 		"tpc1": "10",
 		"tpc2": "13",
 		"tpc3": "12",
-		"tpc4": "tpc4"
+		"tpc4": "11"
 	},
 	"entry85": {
 		"id do aluno!!": "a86",
@@ -771,7 +771,7 @@
 		"tpc1": "9",
 		"tpc2": "13",
 		"tpc3": "12",
-		"tpc4": "tpc4"
+		"tpc4": "18"
 	},
 	"entry86": {
 		"id do aluno!!": "a87",
@@ -780,7 +780,7 @@
 		"tpc1": "9",
 		"tpc2": "11",
 		"tpc3": "10",
-		"tpc4": "tpc4"
+		"tpc4": "9"
 	},
 	"entry87": {
 		"id do aluno!!": "a88",
@@ -789,7 +789,7 @@
 		"tpc1": "8",
 		"tpc2": "16",
 		"tpc3": "12",
-		"tpc4": "tpc4"
+		"tpc4": "15"
 	},
 	"entry88": {
 		"id do aluno!!": "a89",
@@ -798,7 +798,7 @@
 		"tpc1": "8",
 		"tpc2": "13",
 		"tpc3": "13",
-		"tpc4": "tpc4"
+		"tpc4": "18"
 	},
 	"entry89": {
 		"id do aluno!!": "a90",
@@ -807,7 +807,7 @@
 		"tpc1": "9",
 		"tpc2": "9",
 		"tpc3": "10",
-		"tpc4": "tpc4"
+		"tpc4": "17"
 	},
 	"entry90": {
 		"id do aluno!!": "a91",
@@ -816,7 +816,7 @@
 		"tpc1": "10",
 		"tpc2": "12",
 		"tpc3": "8",
-		"tpc4": "tpc4"
+		"tpc4": "20"
 	},
 	"entry91": {
 		"id do aluno!!": "a92",
@@ -825,7 +825,7 @@
 		"tpc1": "17",
 		"tpc2": "14",
 		"tpc3": "9",
-		"tpc4": "tpc4"
+		"tpc4": "17"
 	},
 	"entry92": {
 		"id do aluno!!": "a93",
@@ -834,7 +834,7 @@
 		"tpc1": "17",
 		"tpc2": "11",
 		"tpc3": "8",
-		"tpc4": "tpc4"
+		"tpc4": "12"
 	},
 	"entry93": {
 		"id do aluno!!": "a94",
@@ -843,7 +843,7 @@
 		"tpc1": "16",
 		"tpc2": "16",
 		"tpc3": "20",
-		"tpc4": "tpc4"
+		"tpc4": "14"
 	},
 	"entry94": {
 		"id do aluno!!": "a95",
@@ -852,7 +852,7 @@
 		"tpc1": "11",
 		"tpc2": "11",
 		"tpc3": "17",
-		"tpc4": "tpc4"
+		"tpc4": "16"
 	},
 	"entry95": {
 		"id do aluno!!": "a96",
@@ -861,7 +861,7 @@
 		"tpc1": "19",
 		"tpc2": "19",
 		"tpc3": "12",
-		"tpc4": "tpc4"
+		"tpc4": "9"
 	},
 	"entry96": {
 		"id do aluno!!": "a97",
@@ -870,7 +870,7 @@
 		"tpc1": "12",
 		"tpc2": "9",
 		"tpc3": "20",
-		"tpc4": "tpc4"
+		"tpc4": "12"
 	},
 	"entry97": {
 		"id do aluno!!": "a98",
@@ -879,7 +879,7 @@
 		"tpc1": "14",
 		"tpc2": "9",
 		"tpc3": "12",
-		"tpc4": "tpc4"
+		"tpc4": "11"
 	},
 	"entry98": {
 		"id do aluno!!": "a99",
@@ -888,7 +888,7 @@
 		"tpc1": "17",
 		"tpc2": "13",
 		"tpc3": "8",
-		"tpc4": "tpc4"
+		"tpc4": "10"
 	},
 	"entry99": {
 		"id do aluno!!": "a100",
@@ -897,6 +897,6 @@
 		"tpc1": "20",
 		"tpc2": "17",
 		"tpc3": "8",
-		"tpc4": "tpc4"
+		"tpc4": "14"
 	}
 }

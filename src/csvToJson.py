@@ -53,8 +53,10 @@ def evalError(predicate, error = "Something ain't right"):
 def readContent(file, header):
     dic = []
     for line in file:
-        fields = lexFunc(line)
-        dic.append(dict(zip(header, fields)))
+        #lines with no content are skipped
+        if line != "\n":
+            fields = lexFunc(line)
+            dic.append(dict(zip(header, fields)))
     return dic
 
 
@@ -63,7 +65,7 @@ def readContent(file, header):
 ################################################################################
 def dicToJson(fo, content):
     i = 0
-    dicSize = len(content)
+    
     # Begining of json file
     print("{", file=fo)
 
@@ -90,12 +92,12 @@ def dicToJson(fo, content):
 ################################################################################
 def printKeys(dic, fo):
     keys = list(dic.keys())
-    # we iterate through every key except the last
+    # We iterate through every key except the last
     for entry in keys[:-1]:
         print ("\t\t\"" + str(entry) + "\": \"" + str(dic[entry]) + "\",", file=fo)
     # The last key will have a slightly different behaviour
     else:
-        print ("\t\t\"" + str(keys[-1]) + "\": \"" + str(keys[-1]) + "\"", file=fo)
+        print ("\t\t\"" + str(keys[-1]) + "\": \"" + str(dic[keys[-1]]) + "\"", file=fo)
     return
 
 

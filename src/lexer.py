@@ -17,6 +17,7 @@ states = [
 tokens = [
     "QUOTES", 
     "FIELD",
+    "BLANK",
     #"LISTSIZE",
     #"LISTLIMITATION"
 ]
@@ -26,12 +27,16 @@ tokens = [
 ################################################################################
 def t_FIELD(t):
     #Estou a dizer que tem de começar com um caractere e que dps pode ter espaços pelo meio
-    r'[^\n", ](\ *[^,\n\ ]+)*'
+    r'[^\n",\ \t]([\ \t]*[^,\n\ \t]+)*'
     t.lexer.fields.append(t.value)
     
 def t_TEXTQUALIFIED_FIELD(t):
-    r'[^"\n]+'
+    r'[^"]+'
     t.lexer.fields.append(t.value)
+
+def t_BLANK(t):
+    r'(""|,[\ \t]*,|,\n)'
+    t.lexer.fields.append("")
 
 def t_QUOTES(t):
     r'"'
@@ -41,6 +46,7 @@ def t_QUOTES(t):
 def t_TEXTQUALIFIED_QUOTES(t):
     r'"'
     t.lexer.begin("INITIAL")
+
 
 
 def t_ANY_error(t):
