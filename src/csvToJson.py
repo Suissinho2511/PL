@@ -64,26 +64,24 @@ def readContent(file, header):
 # FUNCTION:  Converting the list of dictionaries to a json file
 ################################################################################
 def dicToJson(fo, content):
-    i = 0
     
     # Begining of json file
-    print("{", file=fo)
+    print("[", file=fo)
 
     # We iterate through every record except the last
     for dic in content[:-1]:
-        print("\t\"entry" + str(i) + "\": {", file=fo)
+        print("\t{", file=fo)
         printKeys(dic, fo)
         print("\t},", file=fo)
-        i = i + 1
         
-    # The last record will have a slightly different behaviour
+    # The last record will have a slightly different behaviour (no comma)
     else:
-        print("\t\"entry" + str(i) + "\": {", file=fo)
+        print("\t{", file=fo)
         printKeys(content[-1], fo)
         print("\t}", file=fo)
         
     # End of json file
-    print("}", file=fo)
+    print("]", file=fo)
     return
 
 
