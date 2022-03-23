@@ -75,9 +75,9 @@ def t_ANY_error(t):
 def lexFunc(line, mode = "RECORD"):
     lexer = lex.lex()
     #if mode == "HEADER":
-        #lexer.begin(mode)
+    #   lexer.begin("HEADER")
 
-    #New variable that will hold all the fields in a record
+    # New variable that will hold all the fields in a record
     lexer.fields = []
 
     #Tuples (field, min_size, max_size)
@@ -88,7 +88,7 @@ def lexFunc(line, mode = "RECORD"):
 
     lexer.input(line)
 
-    #We must always iterate through the tokens
+    # We must always iterate through the tokens
     for tok in lexer:
         pass
 
