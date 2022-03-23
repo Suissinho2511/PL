@@ -31,10 +31,9 @@ def t_QUOTES(t):
     r'"'
     t.lexer.begin("TEXTQUALIFIED")
 
-#TODO: Deve fazer interferência com o LISTSIZE e LISTFUNC (as in, deve fazer match com eles, não?) (A não ser que não deixemos ter {} e ::)
 def t_FIELD(t):
     #Estou a dizer que tem de começar com um caracter e que dps pode ter espaços pelo meio
-    r'[^\n",\ \t]([\ \t]*[^,\n\ \t]+)*'
+    r'[^\n",\ \t\{\}\:]([\ \t]*[^,\n\ \t\{\}\:]+)*'
     t.lexer.fields.append(t.value)
 
 def t_BLANK(t):
@@ -44,15 +43,15 @@ def t_BLANK(t):
 def t_LISTSIZE(t):
     r'{(\d+)(,\d+)?}'
     field = t.lexer.fields[-1]
-    min_size = t.lexer.value(1)
-    max_size = t.lexer.value(2)
-    t.lexer.lists.append((field, min_size, max_size))
+    min_size = t.lexer.value(1) #Não sei como fazer isto. Quero ir buscar o grupo específico.
+    max_size = t.lexer.value(2) # " " " "
+    t.lexer.lists[field] = (min_size, max_size)
 
 def t_LISTFUNC(t):
     r'::([a-zA-Z]+)'
     field = t.lexer.fields[-1]
-    func = t.lexer.value(1)
-    t.lexer.funcs.append((field,func))
+    func = t.lexer.value(1) # " " " "
+    t.lexer.funcs[field] = func
 
 
 def t_TEXTQUALIFIED_QUOTES(t):
@@ -80,11 +79,11 @@ def lexFunc(line, mode = "RECORD"):
     # New variable that will hold all the fields in a record
     lexer.fields = []
 
-    #Tuples (field, min_size, max_size)
-    lexer.lists = []
+    # Dictionary {field: (min_size, max_size)}
+    lexer.lists = {}
 
-    #Pairs (field, function)
-    lexer.funcs = []
+    # Dictionary {field: function}
+    lexer.funcs = {}
 
     lexer.input(line)
 
@@ -92,5 +91,7 @@ def lexFunc(line, mode = "RECORD"):
     for tok in lexer:
         pass
 
-    return lexer.fields
-
+    if mode == "HEADER"
+        return (lexer.fields, lexer.lists, lexer.funcs)
+    else
+        return lexer.fields

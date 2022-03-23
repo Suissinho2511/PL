@@ -26,10 +26,12 @@ def main():
 
     # Getting the header
     line = fi.readline()
-    header = lexFunc(line, "HEADER")
+    #header = lexFunc(line, "HEADER")
+    header, lists, funcs = lexFunc(line, "HEADER")
     
     # Reading the content in dictinary format
-    content = readContent(fi, header)
+    #content = readContent(fi, header)
+    content = readContent(fi, header, lists, funcs)
 
     # Writing in JSON file
     dicToJson(fo, content)
@@ -50,12 +52,13 @@ def evalError(predicate, error = "Something ain't right"):
 ################################################################################
 # FUNCTION:  Getting each entry and put it in a dictionary
 ################################################################################
-def readContent(file, header):
+def readContent(file, header, lists, funcs):
     dic = []
     for line in file:
         #lines with no content are skipped
         if line != "\n":
             fields = lexFunc(line)
+            # how the fuck do we do this? Acho que não vamos poder usar o zip :/
             dic.append(dict(zip(header, fields)))
     return dic
 
