@@ -33,39 +33,46 @@ def t_QUOTES(t):
 
 def t_FIELD(t):
     #Estou a dizer que tem de começar com um caracter e que dps pode ter espaços pelo meio
-    r'[^\n",\ \t\{\}\:]([\ \t]*[^,\n\ \t\{\}\:]+)*'
+    r'[^\n",\ \t\{\}\:]([\ \t]*[^",\n\ \t\{\}\:]+)*[\ \t]*,?'
     t.lexer.fields.append(t.value)
 
 def t_BLANK(t):
-    r'(""|,[\ \t]*,|,\n)'
-    t.lexer.fields.append("")
+    #r'(,[\ \t]*,|,\n)'
+    r',(?=[,\n])'
+    t.lexer.fields.append(t.lexer.fields[-1] + ".")
 
 def t_LISTSIZE(t):
     r'{(\d+)(,\d+)?}'
+
+    print(t.lexer.lexmatch.groups())
     field = t.lexer.fields[-1]
-    min_size = t.lexer.value(1) #Não sei como fazer isto. Quero ir buscar o grupo específico.
-    max_size = t.lexer.value(2) # " " " "
+    min_size = t.lexer.lexmatch.group(1)
+    max_size = t.lexer.lexmatch.group(2)
     t.lexer.lists[field] = (min_size, max_size)
 
 def t_LISTFUNC(t):
     r'::([a-zA-Z]+)'
     field = t.lexer.fields[-1]
-    func = t.lexer.value(1) # " " " "
+    func = t.lexer.lexmatch.group(1)
     t.lexer.funcs[field] = func
 
 
 def t_TEXTQUALIFIED_QUOTES(t):
-    r'"'
+    r'"[\ \t]*,'
     t.lexer.begin("INITIAL")
     
 def t_TEXTQUALIFIED_FIELD(t):
     r'[^"]+'
     t.lexer.fields.append(t.value)
 
+t_ignore = "\n"
+
+t_TEXTQUALIFIED_ignore = ""
 
 def t_ANY_error(t):
     #it just skips over anything we don't care
-    t.lexer.skip(1)
+    #t.lexer.skip(1)
+    print(t.value)
 
 
 ################################################################################
@@ -91,7 +98,7 @@ def lexFunc(line, mode = "RECORD"):
     for tok in lexer:
         pass
 
-    if mode == "HEADER"
+    if mode == "HEADER":
         return (lexer.fields, lexer.lists, lexer.funcs)
-    else
+    else:
         return lexer.fields

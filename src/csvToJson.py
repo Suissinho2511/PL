@@ -28,6 +28,10 @@ def main():
     line = fi.readline()
     #header = lexFunc(line, "HEADER")
     header, lists, funcs = lexFunc(line, "HEADER")
+    print(header)
+    print(lists)
+    print(funcs)
+
     
     # Reading the content in dictinary format
     #content = readContent(fi, header)
