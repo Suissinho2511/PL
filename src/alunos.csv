@@ -1,4 +1,4 @@
-id do aluno!! ,"nome","curso, sup",tpcs{4},,,,
+id,"nome","curso, sup",tpcs{2,4}::sum,,,
 "a1","Aysha Melanie Gilberto","LEI",12,8,19,8
 "a2","Igor André Cantanhede","ENGFIS",12,16,18,20
 "a3","Laurénio Narciso","ENGFIS",8,14,15,14

@@ -26,19 +26,16 @@ def main():
 
     # Getting the header
     line = fi.readline()
-    #header = lexFunc(line, "HEADER")
     header, lists, funcs = lexFunc(line, "HEADER")
-    print(header)
-    print(lists)
-    print(funcs)
-
+    #print(header)
+    #print(lists)
+    #print(funcs)
     
-    # Reading the content in dictinary format
-    #content = readContent(fi, header)
-    content = readContent(fi, header, lists, funcs)
+    # Reading the content in list format
+    content = readContent(fi)
 
     # Writing in JSON file
-    dicToJson(fo, content)
+    dicToJson(fo, content, header, lists, funcs)
 
     fi.close()
     fo.close()
@@ -54,46 +51,87 @@ def evalError(predicate, error = "Something ain't right"):
     return
 
 ################################################################################
-# FUNCTION:  Getting each entry and put it in a dictionary
+# FUNCTION:  Getting each entry and put it in a list
 ################################################################################
-def readContent(file, header, lists, funcs):
-    dic = []
+def readContent(file):
+    content = []
     for line in file:
         #lines with no content are skipped
         if line != "\n":
-            fields = lexFunc(line)
-            # how the fuck do we do this? Acho que não vamos poder usar o zip :/
-            dic.append(dict(zip(header, fields)))
-    return dic
+            content.append(lexFunc(line))
+    return content
 
 
 ################################################################################
-# FUNCTION:  Converting the list of dictionaries to a json file
+# FUNCTION:  Converting the list of entries to a json file
 ################################################################################
-def dicToJson(fo, content):
+def dicToJson(fo, content, header, lists, funcs):
     
     # Begining of json file
     print("[", file=fo)
 
+    is_first = True
     # We iterate through every record except the last
-    for dic in content[:-1]:
-        print("\t{", file=fo)
+    for line in content:
+        i = 0
+        dic = {}
+
+        if is_first:
+            print("\t{", file=fo)
+            is_first = False
+        else:
+            print(",\n\t{", file=fo)
+
+        for entry in header:
+            if entry in lists:
+                # É uma lista
+                min_size, max_size = lists[entry]
+
+                if entry in funcs:
+                    # Tem uma função aplicada
+                    func = funcs[entry]
+
+                    if func == "sum":
+                        # SUM
+                        result = 0
+                        for value in line[i:i+max_size]:
+                            result += int(value)
+                        dic[entry] = result
+
+                    elif func == "avg":
+                        # AVERAGE
+                        result = 0
+                        n = 0
+                        for value in line[i:i+max_size]:
+                            result = (result * n + int(value)) / (n+1)
+                            n += 1
+                        dic[entry] = result
+
+                    else:
+                        #função inválida (deveria dar erro)
+                        pass
+
+                else:
+                    # É uma lista normal
+                    dic[entry] = line[i:i+max_size]
+
+                i += max_size
+            else:
+                # É uma entrada normal
+                dic[entry] = line[i]
+                i += 1
+
         printKeys(dic, fo)
-        print("\t},", file=fo)
-        
-    # The last record will have a slightly different behaviour (no comma)
-    else:
-        print("\t{", file=fo)
-        printKeys(content[-1], fo)
-        print("\t}", file=fo)
+        print("\t}", file=fo, end="")
         
     # End of json file
-    print("]", file=fo)
+    print("\n]", file=fo)
     return
 
 
 ################################################################################
 # FUNCTION:  Print to the file every entry of the dictionary
+# TODO: listas e resultados de funções não deverão ter ""
 ################################################################################
 def printKeys(dic, fo):
     keys = list(dic.keys())

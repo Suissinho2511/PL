@@ -9,9 +9,7 @@
 import ply.lex as lex
 
 states = [
-    ("TEXTQUALIFIED", "exclusive"),
-    #("HEADER", "inclusive"),
-    #("LIST", "exclusive")
+    ("TEXTQUALIFIED", "exclusive")
 ]
 
 tokens = [
@@ -20,7 +18,6 @@ tokens = [
     "BLANK",
     "LISTSIZE",
     "LISTFUNC"
-    #"LISTLIMITATION"
 ]
 
 ################################################################################
@@ -28,51 +25,51 @@ tokens = [
 ################################################################################
 
 def t_QUOTES(t):
-    r'"'
+    r',?"'
     t.lexer.begin("TEXTQUALIFIED")
 
 def t_FIELD(t):
     #Estou a dizer que tem de começar com um caracter e que dps pode ter espaços pelo meio
-    r'[^\n",\ \t\{\}\:]([\ \t]*[^",\n\ \t\{\}\:]+)*[\ \t]*,?'
-    t.lexer.fields.append(t.value)
+    r',?[\ \t]*(?P<content>\w+)[\ \t]*'
+    t.lexer.fields.append(t.lexer.lexmatch.group("content"))
 
 def t_BLANK(t):
-    #r'(,[\ \t]*,|,\n)'
-    r',(?=[,\n])'
-    t.lexer.fields.append(t.lexer.fields[-1] + ".")
+    r'""|,(?=[,\n])'
+    #t.lexer.fields.append("")
 
 def t_LISTSIZE(t):
-    r'{(\d+)(,\d+)?}'
+    r'{(?P<min_size>\d+)(,(?P<max_size>\d+))?}'
 
-    print(t.lexer.lexmatch.groups())
     field = t.lexer.fields[-1]
-    min_size = t.lexer.lexmatch.group(1)
-    max_size = t.lexer.lexmatch.group(2)
+    min_size = int(t.lexer.lexmatch.group("min_size"))
+    max_size_str = t.lexer.lexmatch.group("max_size")
+    if max_size_str:
+        max_size = int(max_size_str)
+    else:
+        max_size = min_size
+
     t.lexer.lists[field] = (min_size, max_size)
 
 def t_LISTFUNC(t):
-    r'::([a-zA-Z]+)'
+    r'::(?P<op>[a-zA-Z]+)'
     field = t.lexer.fields[-1]
-    func = t.lexer.lexmatch.group(1)
+    func = t.lexer.lexmatch.group("op")
     t.lexer.funcs[field] = func
 
 
 def t_TEXTQUALIFIED_QUOTES(t):
-    r'"[\ \t]*,'
+    r'"'
     t.lexer.begin("INITIAL")
     
 def t_TEXTQUALIFIED_FIELD(t):
     r'[^"]+'
     t.lexer.fields.append(t.value)
 
-t_ignore = "\n"
-
-t_TEXTQUALIFIED_ignore = ""
+t_ANY_ignore = '\n'
 
 def t_ANY_error(t):
     #it just skips over anything we don't care
-    #t.lexer.skip(1)
-    print(t.value)
+    print("Error: " + str(t))
 
 
 ################################################################################

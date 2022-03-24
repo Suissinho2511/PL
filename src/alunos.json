@@ -1,0 +1,602 @@
+[
+	{
+		"id": "a1",
+		"nome": "Aysha Melanie Gilberto",
+		"curso, sup": "LEI",
+		"tpcs": "47"
+	},
+	{
+		"id": "a2",
+		"nome": "Igor André Cantanhede",
+		"curso, sup": "ENGFIS",
+		"tpcs": "66"
+	},
+	{
+		"id": "a3",
+		"nome": "Laurénio Narciso",
+		"curso, sup": "ENGFIS",
+		"tpcs": "51"
+	},
+	{
+		"id": "a4",
+		"nome": "Jasnoor Casegas",
+		"curso, sup": "LCC",
+		"tpcs": "62"
+	},
+	{
+		"id": "a5",
+		"nome": "Tawseef Rebouças",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "57"
+	},
+	{
+		"id": "a6",
+		"nome": "Eryk Clementino",
+		"curso, sup": "LEI",
+		"tpcs": "54"
+	},
+	{
+		"id": "a7",
+		"nome": "Ianna Noivo",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "63"
+	},
+	{
+		"id": "a8",
+		"nome": "Ayla Thaissa Reina",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "46"
+	},
+	{
+		"id": "a9",
+		"nome": "Cássia Viviane Coitã",
+		"curso, sup": "ENGFIS",
+		"tpcs": "52"
+	},
+	{
+		"id": "a10",
+		"nome": "Koby Vindima",
+		"curso, sup": "LEI",
+		"tpcs": "56"
+	},
+	{
+		"id": "a11",
+		"nome": "Gustavo Martim Hernandez",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "44"
+	},
+	{
+		"id": "a12",
+		"nome": "Siddarta Beiriz",
+		"curso, sup": "LEI",
+		"tpcs": "59"
+	},
+	{
+		"id": "a13",
+		"nome": "Daniela Patrícia Montes",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "67"
+	},
+	{
+		"id": "a14",
+		"nome": "Kaylla Pessego",
+		"curso, sup": "LCC",
+		"tpcs": "56"
+	},
+	{
+		"id": "a15",
+		"nome": "Bianca Cristina Primitivo",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "53"
+	},
+	{
+		"id": "a16",
+		"nome": "Magna Galhardo",
+		"curso, sup": "ENGFIS",
+		"tpcs": "61"
+	},
+	{
+		"id": "a17",
+		"nome": "Grace Isabel Patriarca",
+		"curso, sup": "LCC",
+		"tpcs": "51"
+	},
+	{
+		"id": "a18",
+		"nome": "Saubhagya Buco",
+		"curso, sup": "LEI",
+		"tpcs": "61"
+	},
+	{
+		"id": "a19",
+		"nome": "Ivo Vicente Boisa",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "55"
+	},
+	{
+		"id": "a20",
+		"nome": "Vivaan Castilhos",
+		"curso, sup": "ENGFIS",
+		"tpcs": "52"
+	},
+	{
+		"id": "a21",
+		"nome": "Layana Camejo",
+		"curso, sup": "ENGFIS",
+		"tpcs": "59"
+	},
+	{
+		"id": "a22",
+		"nome": "Mahdi Menoita",
+		"curso, sup": "ENGFIS",
+		"tpcs": "51"
+	},
+	{
+		"id": "a23",
+		"nome": "Yifan Cortinado",
+		"curso, sup": "LEI",
+		"tpcs": "61"
+	},
+	{
+		"id": "a24",
+		"nome": "Éder Sodré",
+		"curso, sup": "ENGFIS",
+		"tpcs": "56"
+	},
+	{
+		"id": "a25",
+		"nome": "Dhriti Magano",
+		"curso, sup": "ENGFIS",
+		"tpcs": "57"
+	},
+	{
+		"id": "a26",
+		"nome": "Steve Devesa",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "47"
+	},
+	{
+		"id": "a27",
+		"nome": "Lisandro Mariano Picassinos",
+		"curso, sup": "ENGFIS",
+		"tpcs": "49"
+	},
+	{
+		"id": "a28",
+		"nome": "Itiel Quinoy",
+		"curso, sup": "LEI",
+		"tpcs": "53"
+	},
+	{
+		"id": "a29",
+		"nome": "Pranika Reimoo",
+		"curso, sup": "LEI",
+		"tpcs": "56"
+	},
+	{
+		"id": "a30",
+		"nome": "Manaia Viseu",
+		"curso, sup": "ENGFIS",
+		"tpcs": "51"
+	},
+	{
+		"id": "a31",
+		"nome": "Eva Manuel Caio",
+		"curso, sup": "ENGFIS",
+		"tpcs": "64"
+	},
+	{
+		"id": "a32",
+		"nome": "Ariane Sofia Foja",
+		"curso, sup": "LEI",
+		"tpcs": "70"
+	},
+	{
+		"id": "a33",
+		"nome": "Jaime António Pauseiro",
+		"curso, sup": "LCC",
+		"tpcs": "50"
+	},
+	{
+		"id": "a34",
+		"nome": "Tanisha Marzagoo",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "60"
+	},
+	{
+		"id": "a35",
+		"nome": "Siyon Anca",
+		"curso, sup": "LEI",
+		"tpcs": "55"
+	},
+	{
+		"id": "a36",
+		"nome": "Diana Beatriz Boavista",
+		"curso, sup": "LCC",
+		"tpcs": "66"
+	},
+	{
+		"id": "a37",
+		"nome": "Elisiário Saberio",
+		"curso, sup": "ENGFIS",
+		"tpcs": "65"
+	},
+	{
+		"id": "a38",
+		"nome": "Maira Brites",
+		"curso, sup": "ENGFIS",
+		"tpcs": "61"
+	},
+	{
+		"id": "a39",
+		"nome": "Victória Gabriela Incenso",
+		"curso, sup": "LEI",
+		"tpcs": "52"
+	},
+	{
+		"id": "a40",
+		"nome": "Najua Serôdio",
+		"curso, sup": "LCC",
+		"tpcs": "60"
+	},
+	{
+		"id": "a41",
+		"nome": "Lachezar Rosas",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "67"
+	},
+	{
+		"id": "a42",
+		"nome": "Kattleya Trigueiro",
+		"curso, sup": "ENGFIS",
+		"tpcs": "64"
+	},
+	{
+		"id": "a43",
+		"nome": "Tatiana Guiomar Maricoto",
+		"curso, sup": "LCC",
+		"tpcs": "53"
+	},
+	{
+		"id": "a44",
+		"nome": "Mélanie Daniela Bugalhão",
+		"curso, sup": "LCC",
+		"tpcs": "61"
+	},
+	{
+		"id": "a45",
+		"nome": "Imayame Hespanha",
+		"curso, sup": "ENGFIS",
+		"tpcs": "67"
+	},
+	{
+		"id": "a46",
+		"nome": "Yuri Gabriel Baganha",
+		"curso, sup": "LCC",
+		"tpcs": "61"
+	},
+	{
+		"id": "a47",
+		"nome": "Moisés João Cornelio",
+		"curso, sup": "LEI",
+		"tpcs": "72"
+	},
+	{
+		"id": "a48",
+		"nome": "Nazir Assif Trinta",
+		"curso, sup": "LEI",
+		"tpcs": "48"
+	},
+	{
+		"id": "a49",
+		"nome": "Karamjot Arezes",
+		"curso, sup": "LEI",
+		"tpcs": "51"
+	},
+	{
+		"id": "a50",
+		"nome": "Rishit Justa",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "39"
+	},
+	{
+		"id": "a51",
+		"nome": "Iara de Jesus Gonçalo",
+		"curso, sup": "ENGFIS",
+		"tpcs": "48"
+	},
+	{
+		"id": "a52",
+		"nome": "Stepfan Owusu Lercas",
+		"curso, sup": "LEI",
+		"tpcs": "57"
+	},
+	{
+		"id": "a53",
+		"nome": "Abner Umbelina",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "59"
+	},
+	{
+		"id": "a54",
+		"nome": "Dânia Lucy Montelobo",
+		"curso, sup": "LEI",
+		"tpcs": "63"
+	},
+	{
+		"id": "a55",
+		"nome": "Myla Lopez",
+		"curso, sup": "ENGFIS",
+		"tpcs": "58"
+	},
+	{
+		"id": "a56",
+		"nome": "Hakeem Brazão",
+		"curso, sup": "LEI",
+		"tpcs": "69"
+	},
+	{
+		"id": "a57",
+		"nome": "Quinn Aveiro",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "55"
+	},
+	{
+		"id": "a58",
+		"nome": "Etienne Constentino",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "45"
+	},
+	{
+		"id": "a59",
+		"nome": "Emanuel Marcos Delfina",
+		"curso, sup": "LEI",
+		"tpcs": "45"
+	},
+	{
+		"id": "a60",
+		"nome": "Mariana Catarina Ramalheira",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "66"
+	},
+	{
+		"id": "a61",
+		"nome": "Bradley Tabau",
+		"curso, sup": "LCC",
+		"tpcs": "63"
+	},
+	{
+		"id": "a62",
+		"nome": "Ahmadou Bamba Calcinha",
+		"curso, sup": "LCC",
+		"tpcs": "57"
+	},
+	{
+		"id": "a63",
+		"nome": "Francisco Pedro Derresa",
+		"curso, sup": "ENGFIS",
+		"tpcs": "58"
+	},
+	{
+		"id": "a64",
+		"nome": "Gil Miguel Lima",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "57"
+	},
+	{
+		"id": "a65",
+		"nome": "Leonor Pedro Carqueijeiro",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "55"
+	},
+	{
+		"id": "a66",
+		"nome": "Genrikh Maximovich Vila-Chã",
+		"curso, sup": "ENGFIS",
+		"tpcs": "49"
+	},
+	{
+		"id": "a67",
+		"nome": "Mayra Larissa Rolo",
+		"curso, sup": "LCC",
+		"tpcs": "58"
+	},
+	{
+		"id": "a68",
+		"nome": "Leandro David Dunhoo",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "55"
+	},
+	{
+		"id": "a69",
+		"nome": "Adele Belchior",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "61"
+	},
+	{
+		"id": "a70",
+		"nome": "Frantceska Borreca",
+		"curso, sup": "ENGFIS",
+		"tpcs": "56"
+	},
+	{
+		"id": "a71",
+		"nome": "Derrick Urias",
+		"curso, sup": "ENGFIS",
+		"tpcs": "43"
+	},
+	{
+		"id": "a72",
+		"nome": "Ana Gabriel Quirino",
+		"curso, sup": "LCC",
+		"tpcs": "54"
+	},
+	{
+		"id": "a73",
+		"nome": "Carolina Antoo",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "65"
+	},
+	{
+		"id": "a74",
+		"nome": "Vânia Sofia Porfirio",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "70"
+	},
+	{
+		"id": "a75",
+		"nome": "Dárcio Wosvaldo Tudela",
+		"curso, sup": "LEI",
+		"tpcs": "53"
+	},
+	{
+		"id": "a76",
+		"nome": "Zhara Couxão",
+		"curso, sup": "ENGFIS",
+		"tpcs": "52"
+	},
+	{
+		"id": "a77",
+		"nome": "Tomé Ferrito",
+		"curso, sup": "LCC",
+		"tpcs": "58"
+	},
+	{
+		"id": "a78",
+		"nome": "Iasmin Paloma Chaveiro",
+		"curso, sup": "LCC",
+		"tpcs": "51"
+	},
+	{
+		"id": "a79",
+		"nome": "Sadagi Cruto",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "63"
+	},
+	{
+		"id": "a80",
+		"nome": "Maria Carolina Josué",
+		"curso, sup": "ENGFIS",
+		"tpcs": "72"
+	},
+	{
+		"id": "a81",
+		"nome": "Quaresma Lancastre",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "61"
+	},
+	{
+		"id": "a82",
+		"nome": "Evaldir Gervasio",
+		"curso, sup": "ENGFIS",
+		"tpcs": "58"
+	},
+	{
+		"id": "a83",
+		"nome": "Dolorinda Adolfo",
+		"curso, sup": "ENGFIS",
+		"tpcs": "55"
+	},
+	{
+		"id": "a84",
+		"nome": "Laudário Frasão",
+		"curso, sup": "LCC",
+		"tpcs": "68"
+	},
+	{
+		"id": "a85",
+		"nome": "Rómula Jeronimo",
+		"curso, sup": "ENGFIS",
+		"tpcs": "46"
+	},
+	{
+		"id": "a86",
+		"nome": "Clésio Rodeiro",
+		"curso, sup": "LCC",
+		"tpcs": "52"
+	},
+	{
+		"id": "a87",
+		"nome": "Feliciano José Avis",
+		"curso, sup": "ENGFIS",
+		"tpcs": "39"
+	},
+	{
+		"id": "a88",
+		"nome": "Afonso Adriano Marca",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "51"
+	},
+	{
+		"id": "a89",
+		"nome": "Victória Miguel Rosete",
+		"curso, sup": "ENGFIS",
+		"tpcs": "52"
+	},
+	{
+		"id": "a90",
+		"nome": "Tome Teroso",
+		"curso, sup": "ENGFIS",
+		"tpcs": "45"
+	},
+	{
+		"id": "a91",
+		"nome": "Constança Filipa Melado",
+		"curso, sup": "LEI",
+		"tpcs": "50"
+	},
+	{
+		"id": "a92",
+		"nome": "Madalena Jesus Alfaiate",
+		"curso, sup": "LEI",
+		"tpcs": "57"
+	},
+	{
+		"id": "a93",
+		"nome": "Bivhan Reimbau",
+		"curso, sup": "LCC",
+		"tpcs": "48"
+	},
+	{
+		"id": "a94",
+		"nome": "Viviana Sofia Gaspar",
+		"curso, sup": "ENGBIOM",
+		"tpcs": "66"
+	},
+	{
+		"id": "a95",
+		"nome": "Íris Soraia Chiote",
+		"curso, sup": "LEI",
+		"tpcs": "55"
+	},
+	{
+		"id": "a96",
+		"nome": "Anaïs Sintra",
+		"curso, sup": "LCC",
+		"tpcs": "59"
+	},
+	{
+		"id": "a97",
+		"nome": "Salvador Banaca",
+		"curso, sup": "LCC",
+		"tpcs": "53"
+	},
+	{
+		"id": "a98",
+		"nome": "Guilherme Matias Almeirão",
+		"curso, sup": "ENGFIS",
+		"tpcs": "46"
+	},
+	{
+		"id": "a99",
+		"nome": "Xavier Luís Bulha",
+		"curso, sup": "ENGFIS",
+		"tpcs": "48"
+	},
+	{
+		"id": "a100",
+		"nome": "Tude Searas",
+		"curso, sup": "LEI",
+		"tpcs": "59"
+	}
+]
