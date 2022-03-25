@@ -29,12 +29,13 @@ def t_QUOTES(t):
     t.lexer.begin("TEXTQUALIFIED")
 
 def t_FIELD(t):
-    #Estou a dizer que tem de começar com um caracter e que dps pode ter espaços pelo meio
-    r',?[\ \t]*(?P<content>\w+)[\ \t]*'
+    #r',?[\ \t]*(?P<content>\w+)[\ \t]*'    # ",   exemplo_1   ,"
+    r',?(?P<content>\w+)'                   # ",exemplo_2,"
+    #r',?(?P<content>[^,"{}:\n]+)'          # ",   exemplo   3   ,"
     t.lexer.fields.append(t.lexer.lexmatch.group("content"))
 
 def t_BLANK(t):
-    r'""|,(?=[,\n])'
+    r',?""|,(?=[,\n])'
     t.lexer.fields.append("")
 
 def t_LISTSIZE(t):

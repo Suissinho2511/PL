@@ -66,7 +66,7 @@ def readContent(file):
 # FUNCTION:  Converting the list of entries to a json file
 ################################################################################
 def dicToJson(fo, content, header, lists, funcs):
-    
+
     # Begining of json file
     print("[", file=fo)
 
