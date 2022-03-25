@@ -7,7 +7,7 @@
 #           a93208 - Vasco Oliveira
 ################################################################################
 import sys
-from lexer import lexFunc
+from lexer import lexFunc, removeEmpty
 
 ################################################################################
 # FUNCTION:  Main body that will control the program
@@ -90,30 +90,42 @@ def dicToJson(fo, content, header, lists, funcs):
                 if entry in funcs:
                     # Tem uma função aplicada
                     func = funcs[entry]
+                    result = 0
+                    n = 0
 
                     if func == "sum":
                         # SUM
-                        result = 0
                         for value in line[i:i+max_size]:
-                            result += int(value)
-                        dic[entry] = result
+                            if not value == "":
+                                result += int(value)
+                                n += 1
 
                     elif func == "avg":
                         # AVERAGE
-                        result = 0
-                        n = 0
                         for value in line[i:i+max_size]:
-                            result = (result * n + int(value)) / (n+1)
-                            n += 1
-                        dic[entry] = result
+                            if not value == "":
+                                result = (result * n + int(value)) / (n+1)
+                                n += 1
 
                     else:
-                        #função inválida (deveria dar erro)
+                        #função inválida (TODO)
                         pass
+
+                    if n < min_size:
+                        #dados insuficientes (TODO)
+                        pass
+
+                    dic[entry] = result
 
                 else:
                     # É uma lista normal
-                    dic[entry] = line[i:i+max_size]
+                    result = removeEmpty(line[i:i+max_size])
+
+                    if len(result) < min_size:
+                        #dados insuficientes (TODO)
+                        pass
+
+                    dic[entry] = result
 
                 i += max_size
             else:

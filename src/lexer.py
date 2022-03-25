@@ -35,7 +35,7 @@ def t_FIELD(t):
 
 def t_BLANK(t):
     r'""|,(?=[,\n])'
-    #t.lexer.fields.append("")
+    t.lexer.fields.append("")
 
 def t_LISTSIZE(t):
     r'{(?P<min_size>\d+)(,(?P<max_size>\d+))?}'
@@ -96,6 +96,14 @@ def lexFunc(line, mode = "RECORD"):
         pass
 
     if mode == "HEADER":
+        lexer.fields = removeEmpty(lexer.fields)
         return (lexer.fields, lexer.lists, lexer.funcs)
     else:
         return lexer.fields
+
+def removeEmpty(l):
+    result = []
+    for s in l:
+        if not s == "":
+            result.append(s)
+    return result
