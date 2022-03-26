@@ -8,7 +8,6 @@
 ################################################################################
 import sys
 from lexer import lexFunc
-
 ################################################################################
 # FUNCTION:  Main body that will control the program
 ################################################################################
@@ -18,26 +17,26 @@ def main():
     input = sys.argv[1]
     evalError(not input.endswith(".csv"), "Input file needs to end with '.csv'")
     
-    output = sys.argv[2]
-    evalError(not output.endswith(".json"), "Output file needs to end with '.json'")
+    #output = sys.argv[2]
+    #evalError(not output.endswith(".json"), "Output file needs to end with '.json'")
     
     fi = open(input, "r", encoding="UTF-8")
-    fo = open(output, "w", encoding="UTF-8")
+    #fo = open(output, "w", encoding="UTF-8")
 
     # Getting the header
     line = fi.readline()
-    #header = lexFunc(line, "HEADER")
-    header, lists, funcs = lexFunc(line, "HEADER")
+    header = lexFunc(line, "HEADER")
+    print(header)
     
-    # Reading the content in dictinary format
+    # Reading the content in dictionary format
     #content = readContent(fi, header)
-    content = readContent(fi, header, lists, funcs)
+    #content = readContent(fi, header, lists, funcs)
 
     # Writing in JSON file
-    dicToJson(fo, content)
+    #dicToJson(fo, content)
 
     fi.close()
-    fo.close()
+    #fo.close()
     return
 
 ################################################################################
@@ -52,7 +51,7 @@ def evalError(predicate, error = "Something ain't right"):
 ################################################################################
 # FUNCTION:  Getting each entry and put it in a dictionary
 ################################################################################
-def readContent(file, header, lists, funcs):
+def readContent(file, header):
     dic = []
     for line in file:
         #lines with no content are skipped
