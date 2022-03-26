@@ -7,7 +7,8 @@
 #           a93208 - Vasco Oliveira
 ################################################################################
 import sys
-from lexer import lexFunc
+from lexer import lexFunc#, removeEmpty
+
 ################################################################################
 # FUNCTION:  Main body that will control the program
 ################################################################################
@@ -49,46 +50,123 @@ def evalError(predicate, error = "Something ain't right"):
     return
 
 ################################################################################
-# FUNCTION:  Getting each entry and put it in a dictionary
+# FUNCTION:  Getting each entry and put it in a list
 ################################################################################
-def readContent(file, header):
-    dic = []
+def readContent(file):
+    content = []
     for line in file:
         #lines with no content are skipped
         if line != "\n":
-            fields = lexFunc(line)
-            # how the fuck do we do this? Acho que não vamos poder usar o zip :/
-            dic.append(dict(zip(header, fields)))
-    return dic
+            content.append(lexFunc(line))
+    return content
+
+def contentToDic(header, fields):
+    i = 0
+    for category in header:
+        dic = {}
+        # If it is just a string, then its a simple category
+        if isinstance(category, str):
+            dic[category] = fields[i]
+        #If it isn't, then it involves a list
+        else:
+            # If the size is a tuple, then we have a min and a max
+            if isinstance(category[2], tuple):
+                (size, max_size) = category[2]
+            # if it is just a number, then thats the fixed size
+            else:
+                size = category[2]
+                
+            cat_list = fields[i:size]
+            if category[3] == None:
+                dic[category] = cat_list
+            else:
+                dic[category[3]] = cat_list
+        i += 1
 
 
 ################################################################################
-# FUNCTION:  Converting the list of dictionaries to a json file
+# FUNCTION:  Converting the list of entries to a json file
 ################################################################################
-def dicToJson(fo, content):
-    
+def dicToJson(fo, content, header):
+
     # Begining of json file
     print("[", file=fo)
 
+    is_first = True
     # We iterate through every record except the last
-    for dic in content[:-1]:
-        print("\t{", file=fo)
-        printKeys(dic, fo)
-        print("\t},", file=fo)
+    for line in content:
+        i = 0
+        dic = {}
         
-    # The last record will have a slightly different behaviour (no comma)
-    else:
-        print("\t{", file=fo)
-        printKeys(content[-1], fo)
-        print("\t}", file=fo)
+
+        if is_first:
+            print("\t{", file=fo)
+            is_first = False
+        else:
+            print(",\n\t{", file=fo)
+
+        for entry in header:
+            if entry in lists:
+                # É uma lista
+                min_size, max_size = lists[entry]
+
+                if entry in funcs:
+                    # Tem uma função aplicada
+                    func = funcs[entry]
+                    result = 0
+                    n = 0
+
+                    if func == "sum":
+                        # SUM
+                        for value in line[i:i+max_size]:
+                            if not value == "":
+                                result += int(value)
+                                n += 1
+
+                    elif func == "avg":
+                        # AVERAGE
+                        for value in line[i:i+max_size]:
+                            if not value == "":
+                                result = (result * n + int(value)) / (n+1)
+                                n += 1
+
+                    else:
+                        #função inválida (TODO)
+                        pass
+
+                    if n < min_size:
+                        #dados insuficientes (TODO)
+                        pass
+
+                    dic[entry] = result
+
+                else:
+                    # É uma lista normal
+                    result = removeEmpty(line[i:i+max_size])
+
+                    if len(result) < min_size:
+                        #dados insuficientes (TODO)
+                        pass
+
+                    dic[entry] = result
+
+                i += max_size
+            else:
+                # É uma entrada normal
+                dic[entry] = line[i]
+                i += 1
+
+        printKeys(dic, fo)
+        print("\t}", file=fo, end="")
         
     # End of json file
-    print("]", file=fo)
+    print("\n]", file=fo)
     return
 
 
 ################################################################################
 # FUNCTION:  Print to the file every entry of the dictionary
+# TODO: listas e resultados de funções não deverão ter ""
 ################################################################################
 def printKeys(dic, fo):
     keys = list(dic.keys())

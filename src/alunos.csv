@@ -1,7 +1,7 @@
-id do aluno!! ,"nome","curso, sup",tpcs{4},,,,
-"a1","Aysha Melanie Gilberto","LEI",12,8,19,8
-"a2","Igor André Cantanhede","ENGFIS",12,16,18,20
-"a3","Laurénio Narciso","ENGFIS",8,14,15,14
+id,"nome","curso, sup",tpcs{2,4},,,
+"a1","Aysha Melanie Gilberto","LEI",12,,,
+"a2","Igor André Cantanhede","ENGFIS",12,16,,
+"a3","Laurénio Narciso","ENGFIS",8,14,15,
 "a4","Jasnoor Casegas","LCC",14,20,17,11
 "a5","Tawseef Rebouças","ENGBIOM",13,14,13,17
 "a6","Eryk Clementino","LEI",10,19,11,14

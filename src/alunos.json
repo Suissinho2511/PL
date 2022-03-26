@@ -1,902 +1,602 @@
-{
-	"entry0": {
-		"id do aluno!!": "a1",
+[
+	{
+		"id": "a1",
 		"nome": "Aysha Melanie Gilberto",
 		"curso, sup": "LEI",
-		"tpc1": "12",
-		"tpc2": "",
-		"tpc3": "19",
-		"tpc4": "8"
+		"tpcs": "['12']"
 	},
-	"entry1": {
-		"id do aluno!!": "a2",
+	{
+		"id": "a2",
 		"nome": "Igor André Cantanhede",
 		"curso, sup": "ENGFIS",
-		"tpc1": "12",
-		"tpc2": "16",
-		"tpc3": "18",
-		"tpc4": "20"
+		"tpcs": "['12', '16']"
 	},
-	"entry2": {
-		"id do aluno!!": "a3",
+	{
+		"id": "a3",
 		"nome": "Laurénio Narciso",
 		"curso, sup": "ENGFIS",
-		"tpc1": "8",
-		"tpc2": "14",
-		"tpc3": "15",
-		"tpc4": "14"
+		"tpcs": "['8', '14', '15']"
 	},
-	"entry3": {
-		"id do aluno!!": "a4",
+	{
+		"id": "a4",
 		"nome": "Jasnoor Casegas",
 		"curso, sup": "LCC",
-		"tpc1": "14",
-		"tpc2": "20",
-		"tpc3": "17",
-		"tpc4": "11"
+		"tpcs": "['14', '20', '17', '11']"
 	},
-	"entry4": {
-		"id do aluno!!": "a5",
+	{
+		"id": "a5",
 		"nome": "Tawseef Rebouças",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "13",
-		"tpc2": "14",
-		"tpc3": "13",
-		"tpc4": "17"
+		"tpcs": "['13', '14', '13', '17']"
 	},
-	"entry5": {
-		"id do aluno!!": "a6",
+	{
+		"id": "a6",
 		"nome": "Eryk Clementino",
 		"curso, sup": "LEI",
-		"tpc1": "10",
-		"tpc2": "19",
-		"tpc3": "11",
-		"tpc4": "14"
+		"tpcs": "['10', '19', '11', '14']"
 	},
-	"entry6": {
-		"id do aluno!!": "a7",
+	{
+		"id": "a7",
 		"nome": "Ianna Noivo",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "15",
-		"tpc2": "15",
-		"tpc3": "17",
-		"tpc4": "16"
+		"tpcs": "['15', '15', '17', '16']"
 	},
-	"entry7": {
-		"id do aluno!!": "a8",
+	{
+		"id": "a8",
 		"nome": "Ayla Thaissa Reina",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "12",
-		"tpc2": "8",
-		"tpc3": "8",
-		"tpc4": "18"
+		"tpcs": "['12', '8', '8', '18']"
 	},
-	"entry8": {
-		"id do aluno!!": "a9",
+	{
+		"id": "a9",
 		"nome": "Cássia Viviane Coitã",
 		"curso, sup": "ENGFIS",
-		"tpc1": "19",
-		"tpc2": "9",
-		"tpc3": "14",
-		"tpc4": "10"
+		"tpcs": "['19', '9', '14', '10']"
 	},
-	"entry9": {
-		"id do aluno!!": "a10",
+	{
+		"id": "a10",
 		"nome": "Koby Vindima",
 		"curso, sup": "LEI",
-		"tpc1": "9",
-		"tpc2": "14",
-		"tpc3": "20",
-		"tpc4": "13"
+		"tpcs": "['9', '14', '20', '13']"
 	},
-	"entry10": {
-		"id do aluno!!": "a11",
+	{
+		"id": "a11",
 		"nome": "Gustavo Martim Hernandez",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "11",
-		"tpc2": "8",
-		"tpc3": "14",
-		"tpc4": "11"
+		"tpcs": "['11', '8', '14', '11']"
 	},
-	"entry11": {
-		"id do aluno!!": "a12",
+	{
+		"id": "a12",
 		"nome": "Siddarta Beiriz",
 		"curso, sup": "LEI",
-		"tpc1": "17",
-		"tpc2": "10",
-		"tpc3": "16",
-		"tpc4": "16"
+		"tpcs": "['17', '10', '16', '16']"
 	},
-	"entry12": {
-		"id do aluno!!": "a13",
+	{
+		"id": "a13",
 		"nome": "Daniela Patrícia Montes",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "15",
-		"tpc2": "15",
-		"tpc3": "18",
-		"tpc4": "19"
+		"tpcs": "['15', '15', '18', '19']"
 	},
-	"entry13": {
-		"id do aluno!!": "a14",
+	{
+		"id": "a14",
 		"nome": "Kaylla Pessego",
 		"curso, sup": "LCC",
-		"tpc1": "10",
-		"tpc2": "14",
-		"tpc3": "17",
-		"tpc4": "15"
+		"tpcs": "['10', '14', '17', '15']"
 	},
-	"entry14": {
-		"id do aluno!!": "a15",
+	{
+		"id": "a15",
 		"nome": "Bianca Cristina Primitivo",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "16",
-		"tpc2": "9",
-		"tpc3": "18",
-		"tpc4": "10"
+		"tpcs": "['16', '9', '18', '10']"
 	},
-	"entry15": {
-		"id do aluno!!": "a16",
+	{
+		"id": "a16",
 		"nome": "Magna Galhardo",
 		"curso, sup": "ENGFIS",
-		"tpc1": "20",
-		"tpc2": "18",
-		"tpc3": "9",
-		"tpc4": "14"
+		"tpcs": "['20', '18', '9', '14']"
 	},
-	"entry16": {
-		"id do aluno!!": "a17",
+	{
+		"id": "a17",
 		"nome": "Grace Isabel Patriarca",
 		"curso, sup": "LCC",
-		"tpc1": "19",
-		"tpc2": "13",
-		"tpc3": "9",
-		"tpc4": "10"
+		"tpcs": "['19', '13', '9', '10']"
 	},
-	"entry17": {
-		"id do aluno!!": "a18",
+	{
+		"id": "a18",
 		"nome": "Saubhagya Buco",
 		"curso, sup": "LEI",
-		"tpc1": "18",
-		"tpc2": "18",
-		"tpc3": "17",
-		"tpc4": "8"
+		"tpcs": "['18', '18', '17', '8']"
 	},
-	"entry18": {
-		"id do aluno!!": "a19",
+	{
+		"id": "a19",
 		"nome": "Ivo Vicente Boisa",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "14",
-		"tpc2": "10",
-		"tpc3": "18",
-		"tpc4": "13"
+		"tpcs": "['14', '10', '18', '13']"
 	},
-	"entry19": {
-		"id do aluno!!": "a20",
+	{
+		"id": "a20",
 		"nome": "Vivaan Castilhos",
 		"curso, sup": "ENGFIS",
-		"tpc1": "15",
-		"tpc2": "14",
-		"tpc3": "11",
-		"tpc4": "12"
+		"tpcs": "['15', '14', '11', '12']"
 	},
-	"entry20": {
-		"id do aluno!!": "a21",
+	{
+		"id": "a21",
 		"nome": "Layana Camejo",
 		"curso, sup": "ENGFIS",
-		"tpc1": "17",
-		"tpc2": "12",
-		"tpc3": "10",
-		"tpc4": "20"
+		"tpcs": "['17', '12', '10', '20']"
 	},
-	"entry21": {
-		"id do aluno!!": "a22",
+	{
+		"id": "a22",
 		"nome": "Mahdi Menoita",
 		"curso, sup": "ENGFIS",
-		"tpc1": "11",
-		"tpc2": "16",
-		"tpc3": "8",
-		"tpc4": "16"
+		"tpcs": "['11', '16', '8', '16']"
 	},
-	"entry22": {
-		"id do aluno!!": "a23",
+	{
+		"id": "a23",
 		"nome": "Yifan Cortinado",
 		"curso, sup": "LEI",
-		"tpc1": "19",
-		"tpc2": "16",
-		"tpc3": "8",
-		"tpc4": "18"
+		"tpcs": "['19', '16', '8', '18']"
 	},
-	"entry23": {
-		"id do aluno!!": "a24",
+	{
+		"id": "a24",
 		"nome": "Éder Sodré",
 		"curso, sup": "ENGFIS",
-		"tpc1": "17",
-		"tpc2": "13",
-		"tpc3": "14",
-		"tpc4": "12"
+		"tpcs": "['17', '13', '14', '12']"
 	},
-	"entry24": {
-		"id do aluno!!": "a25",
+	{
+		"id": "a25",
 		"nome": "Dhriti Magano",
 		"curso, sup": "ENGFIS",
-		"tpc1": "19",
-		"tpc2": "11",
-		"tpc3": "8",
-		"tpc4": "19"
+		"tpcs": "['19', '11', '8', '19']"
 	},
-	"entry25": {
-		"id do aluno!!": "a26",
+	{
+		"id": "a26",
 		"nome": "Steve Devesa",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "10",
-		"tpc2": "16",
-		"tpc3": "8",
-		"tpc4": "13"
+		"tpcs": "['10', '16', '8', '13']"
 	},
-	"entry26": {
-		"id do aluno!!": "a27",
+	{
+		"id": "a27",
 		"nome": "Lisandro Mariano Picassinos",
 		"curso, sup": "ENGFIS",
-		"tpc1": "13",
-		"tpc2": "10",
-		"tpc3": "16",
-		"tpc4": "10"
+		"tpcs": "['13', '10', '16', '10']"
 	},
-	"entry27": {
-		"id do aluno!!": "a28",
+	{
+		"id": "a28",
 		"nome": "Itiel Quinoy",
 		"curso, sup": "LEI",
-		"tpc1": "18",
-		"tpc2": "18",
-		"tpc3": "8",
-		"tpc4": "9"
+		"tpcs": "['18', '18', '8', '9']"
 	},
-	"entry28": {
-		"id do aluno!!": "a29",
+	{
+		"id": "a29",
 		"nome": "Pranika Reimoo",
 		"curso, sup": "LEI",
-		"tpc1": "12",
-		"tpc2": "16",
-		"tpc3": "15",
-		"tpc4": "13"
+		"tpcs": "['12', '16', '15', '13']"
 	},
-	"entry29": {
-		"id do aluno!!": "a30",
+	{
+		"id": "a30",
 		"nome": "Manaia Viseu",
 		"curso, sup": "ENGFIS",
-		"tpc1": "8",
-		"tpc2": "12",
-		"tpc3": "20",
-		"tpc4": "11"
+		"tpcs": "['8', '12', '20', '11']"
 	},
-	"entry30": {
-		"id do aluno!!": "a31",
+	{
+		"id": "a31",
 		"nome": "Eva Manuel Caio",
 		"curso, sup": "ENGFIS",
-		"tpc1": "12",
-		"tpc2": "16",
-		"tpc3": "20",
-		"tpc4": "16"
+		"tpcs": "['12', '16', '20', '16']"
 	},
-	"entry31": {
-		"id do aluno!!": "a32",
+	{
+		"id": "a32",
 		"nome": "Ariane Sofia Foja",
 		"curso, sup": "LEI",
-		"tpc1": "20",
-		"tpc2": "19",
-		"tpc3": "13",
-		"tpc4": "18"
+		"tpcs": "['20', '19', '13', '18']"
 	},
-	"entry32": {
-		"id do aluno!!": "a33",
+	{
+		"id": "a33",
 		"nome": "Jaime António Pauseiro",
 		"curso, sup": "LCC",
-		"tpc1": "19",
-		"tpc2": "13",
-		"tpc3": "8",
-		"tpc4": "10"
+		"tpcs": "['19', '13', '8', '10']"
 	},
-	"entry33": {
-		"id do aluno!!": "a34",
+	{
+		"id": "a34",
 		"nome": "Tanisha Marzagoo",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "14",
-		"tpc2": "19",
-		"tpc3": "13",
-		"tpc4": "14"
+		"tpcs": "['14', '19', '13', '14']"
 	},
-	"entry34": {
-		"id do aluno!!": "a35",
+	{
+		"id": "a35",
 		"nome": "Siyon Anca",
 		"curso, sup": "LEI",
-		"tpc1": "8",
-		"tpc2": "13",
-		"tpc3": "19",
-		"tpc4": "15"
+		"tpcs": "['8', '13', '19', '15']"
 	},
-	"entry35": {
-		"id do aluno!!": "a36",
+	{
+		"id": "a36",
 		"nome": "Diana Beatriz Boavista",
 		"curso, sup": "LCC",
-		"tpc1": "19",
-		"tpc2": "18",
-		"tpc3": "17",
-		"tpc4": "12"
+		"tpcs": "['19', '18', '17', '12']"
 	},
-	"entry36": {
-		"id do aluno!!": "a37",
+	{
+		"id": "a37",
 		"nome": "Elisiário Saberio",
 		"curso, sup": "ENGFIS",
-		"tpc1": "18",
-		"tpc2": "18",
-		"tpc3": "10",
-		"tpc4": "19"
+		"tpcs": "['18', '18', '10', '19']"
 	},
-	"entry37": {
-		"id do aluno!!": "a38",
+	{
+		"id": "a38",
 		"nome": "Maira Brites",
 		"curso, sup": "ENGFIS",
-		"tpc1": "13",
-		"tpc2": "16",
-		"tpc3": "15",
-		"tpc4": "17"
+		"tpcs": "['13', '16', '15', '17']"
 	},
-	"entry38": {
-		"id do aluno!!": "a39",
+	{
+		"id": "a39",
 		"nome": "Victória Gabriela Incenso",
 		"curso, sup": "LEI",
-		"tpc1": "17",
-		"tpc2": "14",
-		"tpc3": "13",
-		"tpc4": "8"
+		"tpcs": "['17', '14', '13', '8']"
 	},
-	"entry39": {
-		"id do aluno!!": "a40",
+	{
+		"id": "a40",
 		"nome": "Najua Serôdio",
 		"curso, sup": "LCC",
-		"tpc1": "17",
-		"tpc2": "9",
-		"tpc3": "16",
-		"tpc4": "18"
+		"tpcs": "['17', '9', '16', '18']"
 	},
-	"entry40": {
-		"id do aluno!!": "a41",
+	{
+		"id": "a41",
 		"nome": "Lachezar Rosas",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "16",
-		"tpc2": "18",
-		"tpc3": "18",
-		"tpc4": "15"
+		"tpcs": "['16', '18', '18', '15']"
 	},
-	"entry41": {
-		"id do aluno!!": "a42",
+	{
+		"id": "a42",
 		"nome": "Kattleya Trigueiro",
 		"curso, sup": "ENGFIS",
-		"tpc1": "19",
-		"tpc2": "16",
-		"tpc3": "14",
-		"tpc4": "15"
+		"tpcs": "['19', '16', '14', '15']"
 	},
-	"entry42": {
-		"id do aluno!!": "a43",
+	{
+		"id": "a43",
 		"nome": "Tatiana Guiomar Maricoto",
 		"curso, sup": "LCC",
-		"tpc1": "19",
-		"tpc2": "8",
-		"tpc3": "15",
-		"tpc4": "11"
+		"tpcs": "['19', '8', '15', '11']"
 	},
-	"entry43": {
-		"id do aluno!!": "a44",
+	{
+		"id": "a44",
 		"nome": "Mélanie Daniela Bugalhão",
 		"curso, sup": "LCC",
-		"tpc1": "17",
-		"tpc2": "9",
-		"tpc3": "17",
-		"tpc4": "18"
+		"tpcs": "['17', '9', '17', '18']"
 	},
-	"entry44": {
-		"id do aluno!!": "a45",
+	{
+		"id": "a45",
 		"nome": "Imayame Hespanha",
 		"curso, sup": "ENGFIS",
-		"tpc1": "20",
-		"tpc2": "17",
-		"tpc3": "19",
-		"tpc4": "11"
+		"tpcs": "['20', '17', '19', '11']"
 	},
-	"entry45": {
-		"id do aluno!!": "a46",
+	{
+		"id": "a46",
 		"nome": "Yuri Gabriel Baganha",
 		"curso, sup": "LCC",
-		"tpc1": "15",
-		"tpc2": "18",
-		"tpc3": "12",
-		"tpc4": "16"
+		"tpcs": "['15', '18', '12', '16']"
 	},
-	"entry46": {
-		"id do aluno!!": "a47",
+	{
+		"id": "a47",
 		"nome": "Moisés João Cornelio",
 		"curso, sup": "LEI",
-		"tpc1": "20",
-		"tpc2": "16",
-		"tpc3": "19",
-		"tpc4": "17"
+		"tpcs": "['20', '16', '19', '17']"
 	},
-	"entry47": {
-		"id do aluno!!": "a48",
+	{
+		"id": "a48",
 		"nome": "Nazir Assif Trinta",
 		"curso, sup": "LEI",
-		"tpc1": "14",
-		"tpc2": "14",
-		"tpc3": "12",
-		"tpc4": "8"
+		"tpcs": "['14', '14', '12', '8']"
 	},
-	"entry48": {
-		"id do aluno!!": "a49",
+	{
+		"id": "a49",
 		"nome": "Karamjot Arezes",
 		"curso, sup": "LEI",
-		"tpc1": "10",
-		"tpc2": "9",
-		"tpc3": "20",
-		"tpc4": "12"
+		"tpcs": "['10', '9', '20', '12']"
 	},
-	"entry49": {
-		"id do aluno!!": "a50",
+	{
+		"id": "a50",
 		"nome": "Rishit Justa",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "9",
-		"tpc2": "9",
-		"tpc3": "9",
-		"tpc4": "12"
+		"tpcs": "['9', '9', '9', '12']"
 	},
-	"entry50": {
-		"id do aluno!!": "a51",
+	{
+		"id": "a51",
 		"nome": "Iara de Jesus Gonçalo",
 		"curso, sup": "ENGFIS",
-		"tpc1": "14",
-		"tpc2": "8",
-		"tpc3": "12",
-		"tpc4": "14"
+		"tpcs": "['14', '8', '12', '14']"
 	},
-	"entry51": {
-		"id do aluno!!": "a52",
+	{
+		"id": "a52",
 		"nome": "Stepfan Owusu Lercas",
 		"curso, sup": "LEI",
-		"tpc1": "18",
-		"tpc2": "9",
-		"tpc3": "16",
-		"tpc4": "14"
+		"tpcs": "['18', '9', '16', '14']"
 	},
-	"entry52": {
-		"id do aluno!!": "a53",
+	{
+		"id": "a53",
 		"nome": "Abner Umbelina",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "20",
-		"tpc2": "16",
-		"tpc3": "10",
-		"tpc4": "13"
+		"tpcs": "['20', '16', '10', '13']"
 	},
-	"entry53": {
-		"id do aluno!!": "a54",
+	{
+		"id": "a54",
 		"nome": "Dânia Lucy Montelobo",
 		"curso, sup": "LEI",
-		"tpc1": "18",
-		"tpc2": "19",
-		"tpc3": "15",
-		"tpc4": "11"
+		"tpcs": "['18', '19', '15', '11']"
 	},
-	"entry54": {
-		"id do aluno!!": "a55",
+	{
+		"id": "a55",
 		"nome": "Myla Lopez",
 		"curso, sup": "ENGFIS",
-		"tpc1": "9",
-		"tpc2": "17",
-		"tpc3": "12",
-		"tpc4": "20"
+		"tpcs": "['9', '17', '12', '20']"
 	},
-	"entry55": {
-		"id do aluno!!": "a56",
+	{
+		"id": "a56",
 		"nome": "Hakeem Brazão",
 		"curso, sup": "LEI",
-		"tpc1": "18",
-		"tpc2": "18",
-		"tpc3": "13",
-		"tpc4": "20"
+		"tpcs": "['18', '18', '13', '20']"
 	},
-	"entry56": {
-		"id do aluno!!": "a57",
+	{
+		"id": "a57",
 		"nome": "Quinn Aveiro",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "17",
-		"tpc2": "16",
-		"tpc3": "9",
-		"tpc4": "13"
+		"tpcs": "['17', '16', '9', '13']"
 	},
-	"entry57": {
-		"id do aluno!!": "a58",
+	{
+		"id": "a58",
 		"nome": "Etienne Constentino",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "15",
-		"tpc2": "8",
-		"tpc3": "9",
-		"tpc4": "13"
+		"tpcs": "['15', '8', '9', '13']"
 	},
-	"entry58": {
-		"id do aluno!!": "a59",
+	{
+		"id": "a59",
 		"nome": "Emanuel Marcos Delfina",
 		"curso, sup": "LEI",
-		"tpc1": "9",
-		"tpc2": "15",
-		"tpc3": "8",
-		"tpc4": "13"
+		"tpcs": "['9', '15', '8', '13']"
 	},
-	"entry59": {
-		"id do aluno!!": "a60",
+	{
+		"id": "a60",
 		"nome": "Mariana Catarina Ramalheira",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "17",
-		"tpc2": "19",
-		"tpc3": "19",
-		"tpc4": "11"
+		"tpcs": "['17', '19', '19', '11']"
 	},
-	"entry60": {
-		"id do aluno!!": "a61",
+	{
+		"id": "a61",
 		"nome": "Bradley Tabau",
 		"curso, sup": "LCC",
-		"tpc1": "16",
-		"tpc2": "19",
-		"tpc3": "16",
-		"tpc4": "12"
+		"tpcs": "['16', '19', '16', '12']"
 	},
-	"entry61": {
-		"id do aluno!!": "a62",
+	{
+		"id": "a62",
 		"nome": "Ahmadou Bamba Calcinha",
 		"curso, sup": "LCC",
-		"tpc1": "13",
-		"tpc2": "20",
-		"tpc3": "8",
-		"tpc4": "16"
+		"tpcs": "['13', '20', '8', '16']"
 	},
-	"entry62": {
-		"id do aluno!!": "a63",
+	{
+		"id": "a63",
 		"nome": "Francisco Pedro Derresa",
 		"curso, sup": "ENGFIS",
-		"tpc1": "8",
-		"tpc2": "12",
-		"tpc3": "20",
-		"tpc4": "18"
+		"tpcs": "['8', '12', '20', '18']"
 	},
-	"entry63": {
-		"id do aluno!!": "a64",
+	{
+		"id": "a64",
 		"nome": "Gil Miguel Lima",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "16",
-		"tpc2": "19",
-		"tpc3": "8",
-		"tpc4": "14"
+		"tpcs": "['16', '19', '8', '14']"
 	},
-	"entry64": {
-		"id do aluno!!": "a65",
+	{
+		"id": "a65",
 		"nome": "Leonor Pedro Carqueijeiro",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "19",
-		"tpc2": "11",
-		"tpc3": "17",
-		"tpc4": "8"
+		"tpcs": "['19', '11', '17', '8']"
 	},
-	"entry65": {
-		"id do aluno!!": "a66",
+	{
+		"id": "a66",
 		"nome": "Genrikh Maximovich Vila-Chã",
 		"curso, sup": "ENGFIS",
-		"tpc1": "12",
-		"tpc2": "15",
-		"tpc3": "13",
-		"tpc4": "9"
+		"tpcs": "['12', '15', '13', '9']"
 	},
-	"entry66": {
-		"id do aluno!!": "a67",
+	{
+		"id": "a67",
 		"nome": "Mayra Larissa Rolo",
 		"curso, sup": "LCC",
-		"tpc1": "15",
-		"tpc2": "14",
-		"tpc3": "17",
-		"tpc4": "12"
+		"tpcs": "['15', '14', '17', '12']"
 	},
-	"entry67": {
-		"id do aluno!!": "a68",
+	{
+		"id": "a68",
 		"nome": "Leandro David Dunhoo",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "15",
-		"tpc2": "14",
-		"tpc3": "11",
-		"tpc4": "15"
+		"tpcs": "['15', '14', '11', '15']"
 	},
-	"entry68": {
-		"id do aluno!!": "a69",
+	{
+		"id": "a69",
 		"nome": "Adele Belchior",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "17",
-		"tpc2": "12",
-		"tpc3": "20",
-		"tpc4": "12"
+		"tpcs": "['17', '12', '20', '12']"
 	},
-	"entry69": {
-		"id do aluno!!": "a70",
+	{
+		"id": "a70",
 		"nome": "Frantceska Borreca",
 		"curso, sup": "ENGFIS",
-		"tpc1": "18",
-		"tpc2": "11",
-		"tpc3": "19",
-		"tpc4": "8"
+		"tpcs": "['18', '11', '19', '8']"
 	},
-	"entry70": {
-		"id do aluno!!": "a71",
+	{
+		"id": "a71",
 		"nome": "Derrick Urias",
 		"curso, sup": "ENGFIS",
-		"tpc1": "11",
-		"tpc2": "10",
-		"tpc3": "8",
-		"tpc4": "14"
+		"tpcs": "['11', '10', '8', '14']"
 	},
-	"entry71": {
-		"id do aluno!!": "a72",
+	{
+		"id": "a72",
 		"nome": "Ana Gabriel Quirino",
 		"curso, sup": "LCC",
-		"tpc1": "10",
-		"tpc2": "17",
-		"tpc3": "8",
-		"tpc4": "19"
+		"tpcs": "['10', '17', '8', '19']"
 	},
-	"entry72": {
-		"id do aluno!!": "a73",
+	{
+		"id": "a73",
 		"nome": "Carolina Antoo",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "16",
-		"tpc2": "19",
-		"tpc3": "20",
-		"tpc4": "10"
+		"tpcs": "['16', '19', '20', '10']"
 	},
-	"entry73": {
-		"id do aluno!!": "a74",
+	{
+		"id": "a74",
 		"nome": "Vânia Sofia Porfirio",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "18",
-		"tpc2": "19",
-		"tpc3": "18",
-		"tpc4": "15"
+		"tpcs": "['18', '19', '18', '15']"
 	},
-	"entry74": {
-		"id do aluno!!": "a75",
+	{
+		"id": "a75",
 		"nome": "Dárcio Wosvaldo Tudela",
 		"curso, sup": "LEI",
-		"tpc1": "8",
-		"tpc2": "18",
-		"tpc3": "9",
-		"tpc4": "18"
+		"tpcs": "['8', '18', '9', '18']"
 	},
-	"entry75": {
-		"id do aluno!!": "a76",
+	{
+		"id": "a76",
 		"nome": "Zhara Couxão",
 		"curso, sup": "ENGFIS",
-		"tpc1": "16",
-		"tpc2": "10",
-		"tpc3": "14",
-		"tpc4": "12"
+		"tpcs": "['16', '10', '14', '12']"
 	},
-	"entry76": {
-		"id do aluno!!": "a77",
+	{
+		"id": "a77",
 		"nome": "Tomé Ferrito",
 		"curso, sup": "LCC",
-		"tpc1": "14",
-		"tpc2": "10",
-		"tpc3": "15",
-		"tpc4": "19"
+		"tpcs": "['14', '10', '15', '19']"
 	},
-	"entry77": {
-		"id do aluno!!": "a78",
+	{
+		"id": "a78",
 		"nome": "Iasmin Paloma Chaveiro",
 		"curso, sup": "LCC",
-		"tpc1": "8",
-		"tpc2": "15",
-		"tpc3": "19",
-		"tpc4": "9"
+		"tpcs": "['8', '15', '19', '9']"
 	},
-	"entry78": {
-		"id do aluno!!": "a79",
+	{
+		"id": "a79",
 		"nome": "Sadagi Cruto",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "13",
-		"tpc2": "18",
-		"tpc3": "14",
-		"tpc4": "18"
+		"tpcs": "['13', '18', '14', '18']"
 	},
-	"entry79": {
-		"id do aluno!!": "a80",
+	{
+		"id": "a80",
 		"nome": "Maria Carolina Josué",
 		"curso, sup": "ENGFIS",
-		"tpc1": "17",
-		"tpc2": "20",
-		"tpc3": "17",
-		"tpc4": "18"
+		"tpcs": "['17', '20', '17', '18']"
 	},
-	"entry80": {
-		"id do aluno!!": "a81",
+	{
+		"id": "a81",
 		"nome": "Quaresma Lancastre",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "17",
-		"tpc2": "9",
-		"tpc3": "16",
-		"tpc4": "19"
+		"tpcs": "['17', '9', '16', '19']"
 	},
-	"entry81": {
-		"id do aluno!!": "a82",
+	{
+		"id": "a82",
 		"nome": "Evaldir Gervasio",
 		"curso, sup": "ENGFIS",
-		"tpc1": "16",
-		"tpc2": "19",
-		"tpc3": "15",
-		"tpc4": "8"
+		"tpcs": "['16', '19', '15', '8']"
 	},
-	"entry82": {
-		"id do aluno!!": "a83",
+	{
+		"id": "a83",
 		"nome": "Dolorinda Adolfo",
 		"curso, sup": "ENGFIS",
-		"tpc1": "11",
-		"tpc2": "20",
-		"tpc3": "16",
-		"tpc4": "8"
+		"tpcs": "['11', '20', '16', '8']"
 	},
-	"entry83": {
-		"id do aluno!!": "a84",
+	{
+		"id": "a84",
 		"nome": "Laudário Frasão",
 		"curso, sup": "LCC",
-		"tpc1": "20",
-		"tpc2": "19",
-		"tpc3": "10",
-		"tpc4": "19"
+		"tpcs": "['20', '19', '10', '19']"
 	},
-	"entry84": {
-		"id do aluno!!": "a85",
+	{
+		"id": "a85",
 		"nome": "Rómula Jeronimo",
 		"curso, sup": "ENGFIS",
-		"tpc1": "10",
-		"tpc2": "13",
-		"tpc3": "12",
-		"tpc4": "11"
+		"tpcs": "['10', '13', '12', '11']"
 	},
-	"entry85": {
-		"id do aluno!!": "a86",
+	{
+		"id": "a86",
 		"nome": "Clésio Rodeiro",
 		"curso, sup": "LCC",
-		"tpc1": "9",
-		"tpc2": "13",
-		"tpc3": "12",
-		"tpc4": "18"
+		"tpcs": "['9', '13', '12', '18']"
 	},
-	"entry86": {
-		"id do aluno!!": "a87",
+	{
+		"id": "a87",
 		"nome": "Feliciano José Avis",
 		"curso, sup": "ENGFIS",
-		"tpc1": "9",
-		"tpc2": "11",
-		"tpc3": "10",
-		"tpc4": "9"
+		"tpcs": "['9', '11', '10', '9']"
 	},
-	"entry87": {
-		"id do aluno!!": "a88",
+	{
+		"id": "a88",
 		"nome": "Afonso Adriano Marca",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "8",
-		"tpc2": "16",
-		"tpc3": "12",
-		"tpc4": "15"
+		"tpcs": "['8', '16', '12', '15']"
 	},
-	"entry88": {
-		"id do aluno!!": "a89",
+	{
+		"id": "a89",
 		"nome": "Victória Miguel Rosete",
 		"curso, sup": "ENGFIS",
-		"tpc1": "8",
-		"tpc2": "13",
-		"tpc3": "13",
-		"tpc4": "18"
+		"tpcs": "['8', '13', '13', '18']"
 	},
-	"entry89": {
-		"id do aluno!!": "a90",
+	{
+		"id": "a90",
 		"nome": "Tome Teroso",
 		"curso, sup": "ENGFIS",
-		"tpc1": "9",
-		"tpc2": "9",
-		"tpc3": "10",
-		"tpc4": "17"
+		"tpcs": "['9', '9', '10', '17']"
 	},
-	"entry90": {
-		"id do aluno!!": "a91",
+	{
+		"id": "a91",
 		"nome": "Constança Filipa Melado",
 		"curso, sup": "LEI",
-		"tpc1": "10",
-		"tpc2": "12",
-		"tpc3": "8",
-		"tpc4": "20"
+		"tpcs": "['10', '12', '8', '20']"
 	},
-	"entry91": {
-		"id do aluno!!": "a92",
+	{
+		"id": "a92",
 		"nome": "Madalena Jesus Alfaiate",
 		"curso, sup": "LEI",
-		"tpc1": "17",
-		"tpc2": "14",
-		"tpc3": "9",
-		"tpc4": "17"
+		"tpcs": "['17', '14', '9', '17']"
 	},
-	"entry92": {
-		"id do aluno!!": "a93",
+	{
+		"id": "a93",
 		"nome": "Bivhan Reimbau",
 		"curso, sup": "LCC",
-		"tpc1": "17",
-		"tpc2": "11",
-		"tpc3": "8",
-		"tpc4": "12"
+		"tpcs": "['17', '11', '8', '12']"
 	},
-	"entry93": {
-		"id do aluno!!": "a94",
+	{
+		"id": "a94",
 		"nome": "Viviana Sofia Gaspar",
 		"curso, sup": "ENGBIOM",
-		"tpc1": "16",
-		"tpc2": "16",
-		"tpc3": "20",
-		"tpc4": "14"
+		"tpcs": "['16', '16', '20', '14']"
 	},
-	"entry94": {
-		"id do aluno!!": "a95",
+	{
+		"id": "a95",
 		"nome": "Íris Soraia Chiote",
 		"curso, sup": "LEI",
-		"tpc1": "11",
-		"tpc2": "11",
-		"tpc3": "17",
-		"tpc4": "16"
+		"tpcs": "['11', '11', '17', '16']"
 	},
-	"entry95": {
-		"id do aluno!!": "a96",
+	{
+		"id": "a96",
 		"nome": "Anaïs Sintra",
 		"curso, sup": "LCC",
-		"tpc1": "19",
-		"tpc2": "19",
-		"tpc3": "12",
-		"tpc4": "9"
+		"tpcs": "['19', '19', '12', '9']"
 	},
-	"entry96": {
-		"id do aluno!!": "a97",
+	{
+		"id": "a97",
 		"nome": "Salvador Banaca",
 		"curso, sup": "LCC",
-		"tpc1": "12",
-		"tpc2": "9",
-		"tpc3": "20",
-		"tpc4": "12"
+		"tpcs": "['12', '9', '20', '12']"
 	},
-	"entry97": {
-		"id do aluno!!": "a98",
+	{
+		"id": "a98",
 		"nome": "Guilherme Matias Almeirão",
 		"curso, sup": "ENGFIS",
-		"tpc1": "14",
-		"tpc2": "9",
-		"tpc3": "12",
-		"tpc4": "11"
+		"tpcs": "['14', '9', '12', '11']"
 	},
-	"entry98": {
-		"id do aluno!!": "a99",
+	{
+		"id": "a99",
 		"nome": "Xavier Luís Bulha",
 		"curso, sup": "ENGFIS",
-		"tpc1": "17",
-		"tpc2": "13",
-		"tpc3": "8",
-		"tpc4": "10"
+		"tpcs": "['17', '13', '8', '10']"
 	},
-	"entry99": {
-		"id do aluno!!": "a100",
+	{
+		"id": "a100",
 		"nome": "Tude Searas",
 		"curso, sup": "LEI",
-		"tpc1": "20",
-		"tpc2": "17",
-		"tpc3": "8",
-		"tpc4": "14"
+		"tpcs": "['20', '17', '8', '14']"
 	}
-}
+]
