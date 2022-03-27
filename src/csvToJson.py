@@ -183,6 +183,7 @@ def printEntry(dic, entry, fo):
     else:
         print ("\t\t\"" + str(entry) + "\": ", file=fo, end="")
         printElem(value, fo)
+    return
 
 
 ################################################################################
@@ -197,7 +198,7 @@ def printList(entry, value, fo):
     else:
         printElem(value[-1], fo)
         print("]", file=fo, end="")
-
+    return
 
 ################################################################################
 # FUNCTION:  Print to the file an element in string or numeric form
@@ -213,6 +214,6 @@ def printElem(elem, fo):
         # If it doesn't work, we will print it as a string
         except:
             print("\"" + str(elem) + "\"", end = "", file=fo)   
-    
+    return
 
 main()
