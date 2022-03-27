@@ -84,14 +84,14 @@ def contentToDic(fields, header):
             # if it is just a number, then thats the fixed size
             else:
                 size = category[1]
-                
-            cat_list = prepareList(fields[i:(i+size)])
             
+            cat_list = prepareList(fields[i:(i+size)])
+            i += size
             # updating size to the real value
             size = len(cat_list)
             
             #if the record is missing values, then it is not valid
-            if size < min_size:
+            if isinstance(category[1], tuple) and size < min_size:
                 return {}
             
             # If there are no functions, then we just save the list
@@ -104,20 +104,19 @@ def contentToDic(fields, header):
                 result = 0
                 for value in cat_list:
                     result += int(value)
-                dic[category[0] + "_" + category[2]] = result
+                dic[category[0] + "_" + category[2]] = str(result)
                 
             elif category[2] == "avg":
                 # AVERAGE
                 result = 0
                 for value in cat_list:
                     result += int(value)
-                dic[category[0] + "_" + category[2]] = result / size
+                dic[category[0] + "_" + category[2]] = str(result / size)
                 
             # else is for invalid functions
             else:
                 dic[category[0]] = cat_list
                 
-            i += size
     return dic
 
 
@@ -156,7 +155,6 @@ def dicToJson(fo, content):
     return
 
 
-
 ################################################################################
 # FUNCTION:  Print to the file every entry of the dictionary
 ################################################################################
@@ -165,31 +163,56 @@ def printKeys(dic, fo):
     
     # We iterate through every key except the last
     for entry in keys[:-1]:
-        value = dic[entry]
-        
-        # checking if this entry is a list
-        if isinstance(value, list):
-            print ("\t\t\"" + str(entry) + "\": [", file=fo, end ="")
-            #printing each element of the list
-            for elem in value[:-1]:
-                print(str(elem) + ", ", file=fo , end ="" )
-            else:
-                print(str(value[-1]) + "],", file=fo)
-        else:
-            print ("\t\t\"" + str(entry) + "\": \"" + str(value) + "\",", file=fo)
+        printEntry(dic, entry, fo)
+        print(",", file=fo)
     # The last key will have a slightly different behaviour (no comma)
     else:
         entry = keys[-1]
-        value = dic[entry]
-        if isinstance(value, list):
-            print ("\t\t\"" + str(entry) + "\": [", file=fo, end ="")
-            for elem in value[:-1]:
-                print(str(elem) + ", ", file=fo, end ="")
-            else:
-                print(str(value[-1]) + "]", file=fo)
-        else:
-            print ("\t\t\"" + str(entry) + "\": \"" + str(value) + "\"", file=fo)
+        printEntry(dic, entry, fo)
+        print("", file=fo)
+        
     return
 
+################################################################################
+# FUNCTION:  Print to the file one entry
+################################################################################
+def printEntry(dic, entry, fo):
+    value = dic[entry]
+    if isinstance(value, list):
+        printList(entry, value, fo)
+    else:
+        print ("\t\t\"" + str(entry) + "\": ", file=fo, end="")
+        printElem(value, fo)
+
+
+################################################################################
+# FUNCTION:  Print to the file a list
+################################################################################
+def printList(entry, value, fo):
+    print ("\t\t\"" + str(entry) + "\": [", file=fo, end ="")
+    
+    for elem in value[:-1]:
+        printElem(elem, fo)
+        print(", ", file=fo, end ="")
+    else:
+        printElem(value[-1], fo)
+        print("]", file=fo, end="")
+
+
+################################################################################
+# FUNCTION:  Print to the file an element in string or numeric form
+################################################################################
+def printElem(elem, fo):
+    # First we will try to turn it into a number
+    try:
+        print(int(elem), end = "", file=fo)
+    except:
+        try:
+            # Print float with 2 decimals
+            print('%.2f' %float(elem), end = "", file=fo)
+        # If it doesn't work, we will print it as a string
+        except:
+            print("\"" + str(elem) + "\"", end = "", file=fo)   
+    
 
 main()

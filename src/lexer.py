@@ -98,7 +98,7 @@ def t_TEXTQUALIFIED_QUOTES(t):
     t.lexer.begin("INITIAL")
     
 def t_TEXTQUALIFIED_FIELD(t):
-    r'([^"]|\\")+'
+    r'[^"]+'
     t.lexer.fields.append(t.value)
 
 t_LIST_INITIAL_ignore = ' \t\n' # The INITIAL state will also ignore spaces
@@ -126,9 +126,6 @@ def lexFunc(line, mode = "RECORD"):
     # New variable that will hold all the fields in a record
     lexer.fields = []
 
-    # Dictionary {field: function}
-    #lexer.funcs = {}
-
     lexer.input(line)
 
     # We must always iterate through the tokens
@@ -137,17 +134,3 @@ def lexFunc(line, mode = "RECORD"):
 
 
     return lexer.fields
-
-    #if mode == "HEADER":
-    #    lexer.fields = removeEmpty(lexer.fields)
-    #    return (lexer.fields, lexer.lists, lexer.funcs)
-    #else:
-    #    return lexer.fields
-
-def removeEmpty(l):
-    result = []
-    for s in l:
-        if not s == "":
-            result.append(s)
-    return result
-
