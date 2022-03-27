@@ -132,5 +132,4 @@ def lexFunc(line, mode = "RECORD"):
     for tok in lexer:
         pass
 
-
     return lexer.fields

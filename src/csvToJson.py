@@ -63,10 +63,8 @@ def readContent(file, header):
     return content
 
 
-
-
 ################################################################################
-# FUNCTION:  
+# FUNCTION:  Converts content to a dictionary
 ################################################################################
 def contentToDic(fields, header):
     i = 0
@@ -75,23 +73,27 @@ def contentToDic(fields, header):
         # If it is just a string, then its a simple category
         if isinstance(category, str):
             dic[category] = fields[i]
-        #If it isn't, then it involves a list
             i += 1
+        #If it isn't, then it involves a list
         else:
             # If the size is a tuple, then we have a min and a max
             if isinstance(category[1], tuple):
-                (min_size, size) = category[1]
+                (min_size, max_size) = category[1]
             # if it is just a number, then thats the fixed size
             else:
-                size = category[1]
+                max_size = category[1]
             
-            cat_list = prepareList(fields[i:(i+size)])
-            i += size
+            cat_list = prepareList(fields[i:(i+max_size)])
+            i += max_size
+            
             # updating size to the real value
             size = len(cat_list)
             
             #if the record is missing values, then it is not valid
-            if isinstance(category[1], tuple) and size < min_size:
+            if isinstance(category[1], tuple):
+                if size < min_size:
+                    return {}
+            elif size < max_size:
                 return {}
             
             # If there are no functions, then we just save the list

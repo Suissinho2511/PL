@@ -1,596 +1,596 @@
 [
 	{
-		"id do aluno::avg": "a2",
+		"id do aluno": "a2",
 		"nome, aluno": ["Igor André Cantanhede"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 14.00
+		"tpcs_sum": 28
 	},
 	{
-		"id do aluno::avg": "a3",
+		"id do aluno": "a3",
 		"nome, aluno": ["Laurénio Narciso"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 12.33
+		"tpcs_sum": 37
 	},
 	{
-		"id do aluno::avg": "a4",
+		"id do aluno": "a4",
 		"nome, aluno": ["Jasnoor Casegas"],
 		"curso": "LCC",
-		"tpcs_avg": 15.50
+		"tpcs_sum": 62
 	},
 	{
-		"id do aluno::avg": "a5",
+		"id do aluno": "a5",
 		"nome, aluno": ["Tawseef Rebouças"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 14.25
+		"tpcs_sum": 57
 	},
 	{
-		"id do aluno::avg": "a6",
+		"id do aluno": "a6",
 		"nome, aluno": ["Eryk Clementino"],
 		"curso": "LEI",
-		"tpcs_avg": 13.50
+		"tpcs_sum": 54
 	},
 	{
-		"id do aluno::avg": "a7",
+		"id do aluno": "a7",
 		"nome, aluno": ["Ianna Noivo"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 15.75
+		"tpcs_sum": 63
 	},
 	{
-		"id do aluno::avg": "a8",
+		"id do aluno": "a8",
 		"nome, aluno": ["Ayla Thaissa Reina"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 11.50
+		"tpcs_sum": 46
 	},
 	{
-		"id do aluno::avg": "a9",
+		"id do aluno": "a9",
 		"nome, aluno": ["Cássia Viviane Coitã"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 13.00
+		"tpcs_sum": 52
 	},
 	{
-		"id do aluno::avg": "a10",
+		"id do aluno": "a10",
 		"nome, aluno": ["Koby Vindima"],
 		"curso": "LEI",
-		"tpcs_avg": 14.00
+		"tpcs_sum": 56
 	},
 	{
-		"id do aluno::avg": "a11",
+		"id do aluno": "a11",
 		"nome, aluno": ["Gustavo Martim Hernandez"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 11.00
+		"tpcs_sum": 44
 	},
 	{
-		"id do aluno::avg": "a12",
+		"id do aluno": "a12",
 		"nome, aluno": ["Siddarta Beiriz"],
 		"curso": "LEI",
-		"tpcs_avg": 14.75
+		"tpcs_sum": 59
 	},
 	{
-		"id do aluno::avg": "a13",
+		"id do aluno": "a13",
 		"nome, aluno": ["Daniela Patrícia Montes"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 16.75
+		"tpcs_sum": 67
 	},
 	{
-		"id do aluno::avg": "a14",
+		"id do aluno": "a14",
 		"nome, aluno": ["Kaylla Pessego"],
 		"curso": "LCC",
-		"tpcs_avg": 14.00
+		"tpcs_sum": 56
 	},
 	{
-		"id do aluno::avg": "a15",
+		"id do aluno": "a15",
 		"nome, aluno": ["Bianca Cristina Primitivo"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 13.25
+		"tpcs_sum": 53
 	},
 	{
-		"id do aluno::avg": "a16",
+		"id do aluno": "a16",
 		"nome, aluno": ["Magna Galhardo"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 15.25
+		"tpcs_sum": 61
 	},
 	{
-		"id do aluno::avg": "a17",
+		"id do aluno": "a17",
 		"nome, aluno": ["Grace Isabel Patriarca"],
 		"curso": "LCC",
-		"tpcs_avg": 12.75
+		"tpcs_sum": 51
 	},
 	{
-		"id do aluno::avg": "a18",
+		"id do aluno": "a18",
 		"nome, aluno": ["Saubhagya Buco"],
 		"curso": "LEI",
-		"tpcs_avg": 15.25
+		"tpcs_sum": 61
 	},
 	{
-		"id do aluno::avg": "a19",
+		"id do aluno": "a19",
 		"nome, aluno": ["Ivo Vicente Boisa"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 13.75
+		"tpcs_sum": 55
 	},
 	{
-		"id do aluno::avg": "a20",
+		"id do aluno": "a20",
 		"nome, aluno": ["Vivaan Castilhos"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 13.00
+		"tpcs_sum": 52
 	},
 	{
-		"id do aluno::avg": "a21",
+		"id do aluno": "a21",
 		"nome, aluno": ["Layana Camejo"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 14.75
+		"tpcs_sum": 59
 	},
 	{
-		"id do aluno::avg": "a22",
+		"id do aluno": "a22",
 		"nome, aluno": ["Mahdi Menoita"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 12.75
+		"tpcs_sum": 51
 	},
 	{
-		"id do aluno::avg": "a23",
+		"id do aluno": "a23",
 		"nome, aluno": ["Yifan Cortinado"],
 		"curso": "LEI",
-		"tpcs_avg": 15.25
+		"tpcs_sum": 61
 	},
 	{
-		"id do aluno::avg": "a24",
+		"id do aluno": "a24",
 		"nome, aluno": ["Éder Sodré"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 14.00
+		"tpcs_sum": 56
 	},
 	{
-		"id do aluno::avg": "a25",
+		"id do aluno": "a25",
 		"nome, aluno": ["Dhriti Magano"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 14.25
+		"tpcs_sum": 57
 	},
 	{
-		"id do aluno::avg": "a26",
+		"id do aluno": "a26",
 		"nome, aluno": ["Steve Devesa"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 11.75
+		"tpcs_sum": 47
 	},
 	{
-		"id do aluno::avg": "a27",
+		"id do aluno": "a27",
 		"nome, aluno": ["Lisandro Mariano Picassinos"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 12.25
+		"tpcs_sum": 49
 	},
 	{
-		"id do aluno::avg": "a28",
+		"id do aluno": "a28",
 		"nome, aluno": ["Itiel Quinoy"],
 		"curso": "LEI",
-		"tpcs_avg": 13.25
+		"tpcs_sum": 53
 	},
 	{
-		"id do aluno::avg": "a29",
+		"id do aluno": "a29",
 		"nome, aluno": ["Pranika Reimoo"],
 		"curso": "LEI",
-		"tpcs_avg": 14.00
+		"tpcs_sum": 56
 	},
 	{
-		"id do aluno::avg": "a30",
+		"id do aluno": "a30",
 		"nome, aluno": ["Manaia Viseu"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 12.75
+		"tpcs_sum": 51
 	},
 	{
-		"id do aluno::avg": "a31",
+		"id do aluno": "a31",
 		"nome, aluno": ["Eva Manuel Caio"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 16.00
+		"tpcs_sum": 64
 	},
 	{
-		"id do aluno::avg": "a32",
+		"id do aluno": "a32",
 		"nome, aluno": ["Ariane Sofia Foja"],
 		"curso": "LEI",
-		"tpcs_avg": 17.50
+		"tpcs_sum": 70
 	},
 	{
-		"id do aluno::avg": "a33",
+		"id do aluno": "a33",
 		"nome, aluno": ["Jaime António Pauseiro"],
 		"curso": "LCC",
-		"tpcs_avg": 12.50
+		"tpcs_sum": 50
 	},
 	{
-		"id do aluno::avg": "a34",
+		"id do aluno": "a34",
 		"nome, aluno": ["Tanisha Marzagoo"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 15.00
+		"tpcs_sum": 60
 	},
 	{
-		"id do aluno::avg": "a35",
+		"id do aluno": "a35",
 		"nome, aluno": ["Siyon Anca"],
 		"curso": "LEI",
-		"tpcs_avg": 13.75
+		"tpcs_sum": 55
 	},
 	{
-		"id do aluno::avg": "a36",
+		"id do aluno": "a36",
 		"nome, aluno": ["Diana Beatriz Boavista"],
 		"curso": "LCC",
-		"tpcs_avg": 16.50
+		"tpcs_sum": 66
 	},
 	{
-		"id do aluno::avg": "a37",
+		"id do aluno": "a37",
 		"nome, aluno": ["Elisiário Saberio"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 16.25
+		"tpcs_sum": 65
 	},
 	{
-		"id do aluno::avg": "a38",
+		"id do aluno": "a38",
 		"nome, aluno": ["Maira Brites"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 15.25
+		"tpcs_sum": 61
 	},
 	{
-		"id do aluno::avg": "a39",
+		"id do aluno": "a39",
 		"nome, aluno": ["Victória Gabriela Incenso"],
 		"curso": "LEI",
-		"tpcs_avg": 13.00
+		"tpcs_sum": 52
 	},
 	{
-		"id do aluno::avg": "a40",
+		"id do aluno": "a40",
 		"nome, aluno": ["Najua Serôdio"],
 		"curso": "LCC",
-		"tpcs_avg": 15.00
+		"tpcs_sum": 60
 	},
 	{
-		"id do aluno::avg": "a41",
+		"id do aluno": "a41",
 		"nome, aluno": ["Lachezar Rosas"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 16.75
+		"tpcs_sum": 67
 	},
 	{
-		"id do aluno::avg": "a42",
+		"id do aluno": "a42",
 		"nome, aluno": ["Kattleya Trigueiro"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 16.00
+		"tpcs_sum": 64
 	},
 	{
-		"id do aluno::avg": "a43",
+		"id do aluno": "a43",
 		"nome, aluno": ["Tatiana Guiomar Maricoto"],
 		"curso": "LCC",
-		"tpcs_avg": 13.25
+		"tpcs_sum": 53
 	},
 	{
-		"id do aluno::avg": "a44",
+		"id do aluno": "a44",
 		"nome, aluno": ["Mélanie Daniela Bugalhão"],
 		"curso": "LCC",
-		"tpcs_avg": 15.25
+		"tpcs_sum": 61
 	},
 	{
-		"id do aluno::avg": "a45",
+		"id do aluno": "a45",
 		"nome, aluno": ["Imayame Hespanha"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 16.75
+		"tpcs_sum": 67
 	},
 	{
-		"id do aluno::avg": "a46",
+		"id do aluno": "a46",
 		"nome, aluno": ["Yuri Gabriel Baganha"],
 		"curso": "LCC",
-		"tpcs_avg": 15.25
+		"tpcs_sum": 61
 	},
 	{
-		"id do aluno::avg": "a47",
+		"id do aluno": "a47",
 		"nome, aluno": ["Moisés João Cornelio"],
 		"curso": "LEI",
-		"tpcs_avg": 18.00
+		"tpcs_sum": 72
 	},
 	{
-		"id do aluno::avg": "a48",
+		"id do aluno": "a48",
 		"nome, aluno": ["Nazir Assif Trinta"],
 		"curso": "LEI",
-		"tpcs_avg": 12.00
+		"tpcs_sum": 48
 	},
 	{
-		"id do aluno::avg": "a49",
+		"id do aluno": "a49",
 		"nome, aluno": ["Karamjot Arezes"],
 		"curso": "LEI",
-		"tpcs_avg": 12.75
+		"tpcs_sum": 51
 	},
 	{
-		"id do aluno::avg": "a50",
+		"id do aluno": "a50",
 		"nome, aluno": ["Rishit Justa"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 9.75
+		"tpcs_sum": 39
 	},
 	{
-		"id do aluno::avg": "a51",
+		"id do aluno": "a51",
 		"nome, aluno": ["Iara de Jesus Gonçalo"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 12.00
+		"tpcs_sum": 48
 	},
 	{
-		"id do aluno::avg": "a52",
+		"id do aluno": "a52",
 		"nome, aluno": ["Stepfan Owusu Lercas"],
 		"curso": "LEI",
-		"tpcs_avg": 14.25
+		"tpcs_sum": 57
 	},
 	{
-		"id do aluno::avg": "a53",
+		"id do aluno": "a53",
 		"nome, aluno": ["Abner Umbelina"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 14.75
+		"tpcs_sum": 59
 	},
 	{
-		"id do aluno::avg": "a54",
+		"id do aluno": "a54",
 		"nome, aluno": ["Dânia Lucy Montelobo"],
 		"curso": "LEI",
-		"tpcs_avg": 15.75
+		"tpcs_sum": 63
 	},
 	{
-		"id do aluno::avg": "a55",
+		"id do aluno": "a55",
 		"nome, aluno": ["Myla Lopez"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 14.50
+		"tpcs_sum": 58
 	},
 	{
-		"id do aluno::avg": "a56",
+		"id do aluno": "a56",
 		"nome, aluno": ["Hakeem Brazão"],
 		"curso": "LEI",
-		"tpcs_avg": 17.25
+		"tpcs_sum": 69
 	},
 	{
-		"id do aluno::avg": "a57",
+		"id do aluno": "a57",
 		"nome, aluno": ["Quinn Aveiro"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 13.75
+		"tpcs_sum": 55
 	},
 	{
-		"id do aluno::avg": "a58",
+		"id do aluno": "a58",
 		"nome, aluno": ["Etienne Constentino"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 11.25
+		"tpcs_sum": 45
 	},
 	{
-		"id do aluno::avg": "a59",
+		"id do aluno": "a59",
 		"nome, aluno": ["Emanuel Marcos Delfina"],
 		"curso": "LEI",
-		"tpcs_avg": 11.25
+		"tpcs_sum": 45
 	},
 	{
-		"id do aluno::avg": "a60",
+		"id do aluno": "a60",
 		"nome, aluno": ["Mariana Catarina Ramalheira"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 16.50
+		"tpcs_sum": 66
 	},
 	{
-		"id do aluno::avg": "a61",
+		"id do aluno": "a61",
 		"nome, aluno": ["Bradley Tabau"],
 		"curso": "LCC",
-		"tpcs_avg": 15.75
+		"tpcs_sum": 63
 	},
 	{
-		"id do aluno::avg": "a62",
+		"id do aluno": "a62",
 		"nome, aluno": ["Ahmadou Bamba Calcinha"],
 		"curso": "LCC",
-		"tpcs_avg": 14.25
+		"tpcs_sum": 57
 	},
 	{
-		"id do aluno::avg": "a63",
+		"id do aluno": "a63",
 		"nome, aluno": ["Francisco Pedro Derresa"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 14.50
+		"tpcs_sum": 58
 	},
 	{
-		"id do aluno::avg": "a64",
+		"id do aluno": "a64",
 		"nome, aluno": ["Gil Miguel Lima"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 14.25
+		"tpcs_sum": 57
 	},
 	{
-		"id do aluno::avg": "a65",
+		"id do aluno": "a65",
 		"nome, aluno": ["Leonor Pedro Carqueijeiro"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 13.75
+		"tpcs_sum": 55
 	},
 	{
-		"id do aluno::avg": "a66",
+		"id do aluno": "a66",
 		"nome, aluno": ["Genrikh Maximovich Vila-Chã"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 12.25
+		"tpcs_sum": 49
 	},
 	{
-		"id do aluno::avg": "a67",
+		"id do aluno": "a67",
 		"nome, aluno": ["Mayra Larissa Rolo"],
 		"curso": "LCC",
-		"tpcs_avg": 14.50
+		"tpcs_sum": 58
 	},
 	{
-		"id do aluno::avg": "a68",
+		"id do aluno": "a68",
 		"nome, aluno": ["Leandro David Dunhoo"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 13.75
+		"tpcs_sum": 55
 	},
 	{
-		"id do aluno::avg": "a69",
+		"id do aluno": "a69",
 		"nome, aluno": ["Adele Belchior"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 15.25
+		"tpcs_sum": 61
 	},
 	{
-		"id do aluno::avg": "a70",
+		"id do aluno": "a70",
 		"nome, aluno": ["Frantceska Borreca"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 14.00
+		"tpcs_sum": 56
 	},
 	{
-		"id do aluno::avg": "a71",
+		"id do aluno": "a71",
 		"nome, aluno": ["Derrick Urias"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 10.75
+		"tpcs_sum": 43
 	},
 	{
-		"id do aluno::avg": "a72",
+		"id do aluno": "a72",
 		"nome, aluno": ["Ana Gabriel Quirino"],
 		"curso": "LCC",
-		"tpcs_avg": 13.50
+		"tpcs_sum": 54
 	},
 	{
-		"id do aluno::avg": "a73",
+		"id do aluno": "a73",
 		"nome, aluno": ["Carolina Antoo"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 16.25
+		"tpcs_sum": 65
 	},
 	{
-		"id do aluno::avg": "a74",
+		"id do aluno": "a74",
 		"nome, aluno": ["Vânia Sofia Porfirio"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 17.50
+		"tpcs_sum": 70
 	},
 	{
-		"id do aluno::avg": "a75",
+		"id do aluno": "a75",
 		"nome, aluno": ["Dárcio Wosvaldo Tudela"],
 		"curso": "LEI",
-		"tpcs_avg": 13.25
+		"tpcs_sum": 53
 	},
 	{
-		"id do aluno::avg": "a76",
+		"id do aluno": "a76",
 		"nome, aluno": ["Zhara Couxão"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 13.00
+		"tpcs_sum": 52
 	},
 	{
-		"id do aluno::avg": "a77",
+		"id do aluno": "a77",
 		"nome, aluno": ["Tomé Ferrito"],
 		"curso": "LCC",
-		"tpcs_avg": 14.50
+		"tpcs_sum": 58
 	},
 	{
-		"id do aluno::avg": "a78",
+		"id do aluno": "a78",
 		"nome, aluno": ["Iasmin Paloma Chaveiro"],
 		"curso": "LCC",
-		"tpcs_avg": 12.75
+		"tpcs_sum": 51
 	},
 	{
-		"id do aluno::avg": "a79",
+		"id do aluno": "a79",
 		"nome, aluno": ["Sadagi Cruto"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 15.75
+		"tpcs_sum": 63
 	},
 	{
-		"id do aluno::avg": "a80",
+		"id do aluno": "a80",
 		"nome, aluno": ["Maria Carolina Josué"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 18.00
+		"tpcs_sum": 72
 	},
 	{
-		"id do aluno::avg": "a81",
+		"id do aluno": "a81",
 		"nome, aluno": ["Quaresma Lancastre"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 15.25
+		"tpcs_sum": 61
 	},
 	{
-		"id do aluno::avg": "a82",
+		"id do aluno": "a82",
 		"nome, aluno": ["Evaldir Gervasio"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 14.50
+		"tpcs_sum": 58
 	},
 	{
-		"id do aluno::avg": "a83",
+		"id do aluno": "a83",
 		"nome, aluno": ["Dolorinda Adolfo"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 13.75
+		"tpcs_sum": 55
 	},
 	{
-		"id do aluno::avg": "a84",
+		"id do aluno": "a84",
 		"nome, aluno": ["Laudário Frasão"],
 		"curso": "LCC",
-		"tpcs_avg": 17.00
+		"tpcs_sum": 68
 	},
 	{
-		"id do aluno::avg": "a85",
+		"id do aluno": "a85",
 		"nome, aluno": ["Rómula Jeronimo"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 11.50
+		"tpcs_sum": 46
 	},
 	{
-		"id do aluno::avg": "a86",
+		"id do aluno": "a86",
 		"nome, aluno": ["Clésio Rodeiro"],
 		"curso": "LCC",
-		"tpcs_avg": 13.00
+		"tpcs_sum": 52
 	},
 	{
-		"id do aluno::avg": "a87",
+		"id do aluno": "a87",
 		"nome, aluno": ["Feliciano José Avis"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 9.75
+		"tpcs_sum": 39
 	},
 	{
-		"id do aluno::avg": "a88",
+		"id do aluno": "a88",
 		"nome, aluno": ["Afonso Adriano Marca"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 12.75
+		"tpcs_sum": 51
 	},
 	{
-		"id do aluno::avg": "a89",
+		"id do aluno": "a89",
 		"nome, aluno": ["Victória Miguel Rosete"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 13.00
+		"tpcs_sum": 52
 	},
 	{
-		"id do aluno::avg": "a90",
+		"id do aluno": "a90",
 		"nome, aluno": ["Tome Teroso"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 11.25
+		"tpcs_sum": 45
 	},
 	{
-		"id do aluno::avg": "a91",
+		"id do aluno": "a91",
 		"nome, aluno": ["Constança Filipa Melado"],
 		"curso": "LEI",
-		"tpcs_avg": 12.50
+		"tpcs_sum": 50
 	},
 	{
-		"id do aluno::avg": "a92",
+		"id do aluno": "a92",
 		"nome, aluno": ["Madalena Jesus Alfaiate"],
 		"curso": "LEI",
-		"tpcs_avg": 14.25
+		"tpcs_sum": 57
 	},
 	{
-		"id do aluno::avg": "a93",
+		"id do aluno": "a93",
 		"nome, aluno": ["Bivhan Reimbau"],
 		"curso": "LCC",
-		"tpcs_avg": 12.00
+		"tpcs_sum": 48
 	},
 	{
-		"id do aluno::avg": "a94",
+		"id do aluno": "a94",
 		"nome, aluno": ["Viviana Sofia Gaspar"],
 		"curso": "ENGBIOM",
-		"tpcs_avg": 16.50
+		"tpcs_sum": 66
 	},
 	{
-		"id do aluno::avg": "a95",
+		"id do aluno": "a95",
 		"nome, aluno": ["Íris Soraia Chiote"],
 		"curso": "LEI",
-		"tpcs_avg": 13.75
+		"tpcs_sum": 55
 	},
 	{
-		"id do aluno::avg": "a96",
+		"id do aluno": "a96",
 		"nome, aluno": ["Anaïs Sintra"],
 		"curso": "LCC",
-		"tpcs_avg": 14.75
+		"tpcs_sum": 59
 	},
 	{
-		"id do aluno::avg": "a97",
+		"id do aluno": "a97",
 		"nome, aluno": ["Salvador Banaca"],
 		"curso": "LCC",
-		"tpcs_avg": 13.25
+		"tpcs_sum": 53
 	},
 	{
-		"id do aluno::avg": "a98",
+		"id do aluno": "a98",
 		"nome, aluno": ["Guilherme Matias Almeirão"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 11.50
+		"tpcs_sum": 46
 	},
 	{
-		"id do aluno::avg": "a99",
+		"id do aluno": "a99",
 		"nome, aluno": ["Xavier Luís Bulha"],
 		"curso": "ENGFIS",
-		"tpcs_avg": 12.00
+		"tpcs_sum": 48
 	},
 	{
-		"id do aluno::avg": "a100",
+		"id do aluno": "a100",
 		"nome, aluno": ["Tude Searas"],
 		"curso": "LEI",
-		"tpcs_avg": 14.75
+		"tpcs_sum": 59
 	}
 ]
