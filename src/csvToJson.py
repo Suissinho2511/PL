@@ -1,13 +1,13 @@
 ################################################################################
 # NAME:     CSV TO JSON
 # PURPOSE:  Converting a generic csv file to a json file
-#GROUP:     5
+# GROUP:    5
 # ELEMENTS: a93234 - Diogo Matos
 #           a83630 - Duarte Serrão
 #           a93208 - Vasco Oliveira
 ################################################################################
 import sys
-from lexer import lexFunc#, removeEmpty
+from lexer import lexFunc
 
 ################################################################################
 # FUNCTION:  Main body that will control the program
