@@ -13,7 +13,9 @@ blebleble
 
 /===
 
-for(age:ages)
-	$ "\t" $ age $ "\n" $;
+for(age:ages) {
+	$ "AAAA" $;
+$ "\t" $ age $ "\n" $;
+}
 
 ===/
