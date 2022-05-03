@@ -1,0 +1,19 @@
+blablabla
+
+/===
+
+for(author:authors)
+	// for(age:ages)
+		$ "<p class=\"author\">" $ author $ "\t" $ "</p>\n" $;
+		/* fuck me in the ass
+		cause I love Jesus */
+===/
+
+blebleble
+
+/===
+
+for(age:ages)
+	$ "\t" $ age $ "\n" $;
+
+===/
