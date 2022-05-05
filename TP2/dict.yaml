@@ -1,10 +1,23 @@
 
 authors: 
- - Ana
- - Luis
- - João
+  - Ana
+  - Luis
+  - João
 
 ages: 
- - 1
- - 22
- - 333
+  - 1
+  - 22
+  - 333
+
+groups:
+  a:
+    - a1
+    - a2
+    - a3
+  b:
+    - b1
+
+apples:
+  - "apple :)"
+
+bool: False

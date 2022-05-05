@@ -80,7 +80,8 @@ ast = parser.parse(content)
 
 ### solve
 
-print(ast)
+print(dic ,end='\n\n\n')
+print(ast, end='\n\n\n')
 
 def format(string):
     symbols = {
@@ -96,12 +97,22 @@ def evaluate_bool_expression(condition,dic):
     cond_type = condition[0]
 
     if(cond_type == 'id'):
-        return (condition[1] in dic)
-        
+        return (dic.get(condition[1],None))
+
+    if(cond_type == 'num'):
+        return (condition[1] != 0)
+
+
     return False
 
+level = -1
 def solve(ast,dic,output):
+    global level
+    level = level + 1
     for op in ast:
+        for i in range(0,level):
+            print('\t',end='')
+        print(op)
         op_type = op[0]
 
         if op_type == 'text':
@@ -124,11 +135,10 @@ def solve(ast,dic,output):
                 solve(ifops,dic,output)
             else:
                 solve(elseops,dic,output)
-
+    level = level - 1
 
 solve(ast,dic,f_output)
-
-print(dic)
+#print(dic ,end='\n\n\n')
 
 ### exit
 

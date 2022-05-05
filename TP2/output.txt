@@ -1,17 +1,21 @@
-blablabla
-
+for:
 <p class="author">Ana	</p>
 <p class="author">Luis	</p>
 <p class="author">João	</p>
 
 
-blebleble
-
+for em bloco:
 AAAA	1
 AAAA	22
 AAAA	333
 
+
+for aninhado:
 ab
 
-apple :)
+if&else:
+no apples :(
 no oranges :(
+
+
+arithmetic:

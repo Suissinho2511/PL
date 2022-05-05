@@ -7,12 +7,12 @@ reserved = {
 	'for'	:	'FOR',
 	'if'	:	'IF',
 	'else'	:	'ELSE',
+	'while'	:	'WHILE',
 	'/==='	:	'SECTIONBEGIN',
 	'===/'	:	'SECTIONEND',
 	'/*'	:	'COMMENTBEGIN',
 	'*/'	:	'COMMENTEND',
 	'$'		:	'FORMATTEDSTRINGDELIMITER',
-	'\n'	:	'NEWLINE',
 	';'		:	'SEMICOLLON',
 	'('		:	'OPARENTHESIS',
 	')'		:	'CPARENTHESIS',
@@ -24,10 +24,11 @@ tokens = ['TEXT', 'STR', 'ID', 'COMMENTLINE', 'COMMENTBLOCK'] + list(reserved.va
 literals = []
 
 states = [
-	('for','exclusive'),
 	('section','exclusive'),
 	('commentblock','exclusive'),
+	('for','exclusive'),
 	('if','exclusive'),
+	('while','exclusive'),
 ]
 
 ### INITIAL
@@ -40,13 +41,8 @@ def t_SECTIONBEGIN(t):
 	return t;
 
 def t_TEXT(t):
-	r'.+'
+	r'((?!/===)(.|\n))+'
 	#print(t)
-	return t
-
-def t_NEWLINE(t):
-	r'\n'
-	t.type = 'TEXT'
 	return t
 
 
@@ -62,6 +58,12 @@ def t_section_FOR(t):
 def t_section_IF(t):
 	r'if'
 	t.lexer.begin('if')
+	#print(t)
+	return t
+
+def t_section_WHILE(t):
+	r'while'
+	t.lexer.begin('while')
 	#print(t)
 	return t
 	
@@ -154,7 +156,7 @@ def t_for_COLLON(t):
 	return t
 
 
-### FOR
+### IF
 t_if_ignore = ' \n\t\r'
 
 def t_if_ID(t):
@@ -173,6 +175,25 @@ def t_if_CPARENTHESIS(t):
 	#print(t)
 	return t
 
+
+### WHILE
+t_while_ignore = ' \n\t\r'
+
+def t_while_ID(t):
+	r'[a-zA-Z_]\w*'
+	#print(t)
+	return t
+
+def t_while_OPARENTHESIS(t):
+	r'\('
+	#print(t)
+	return t
+
+def t_while_CPARENTHESIS(t):
+	r'\)'
+	t.lexer.begin('section')
+	#print(t)
+	return t
 
 
 

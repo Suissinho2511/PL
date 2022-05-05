@@ -1,5 +1,4 @@
-blablabla
-
+for:
 /===
 
 for(author:authors)
@@ -9,8 +8,7 @@ for(author:authors)
 		cause I love Jesus */
 ===/
 
-blebleble
-
+for em bloco:
 /===
 
 for(age:ages) {
@@ -19,6 +17,8 @@ $ "\t" $ age $ "\n" $;
 }
 
 ===/
+
+for aninhado:
 /===
 
 for( group:groups)
@@ -27,8 +27,16 @@ for( group:groups)
 
 ===/
 
+if&else:
 /===
 
-if(apples)for(apple: apples)$apple$"\n"$;else{$"no apples :(\n"$;}if(oranges)for(orange:oranges)$orange$"\n"$;else$"no oranges :(\n"$;
+if(bool)for(apple: apples)$apple$"\n"$;else{$"no apples :(\n"$;}if(oranges)for(orange:oranges)$orange$"\n"$;else$"no oranges :(\n"$;
+
+===/
+
+arithmetic:
+/===
+
+
 
 ===/
