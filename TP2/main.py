@@ -92,6 +92,14 @@ def format(string):
         string = string.replace(symbol,symbols[symbol])
     return string
 
+def evaluate_bool_expression(condition,dic):
+    cond_type = condition[0]
+
+    if(cond_type == 'id'):
+        return (condition[1] in dic)
+        
+    return False
+
 def solve(ast,dic,output):
     for op in ast:
         op_type = op[0]
@@ -105,11 +113,18 @@ def solve(ast,dic,output):
         elif op_type == 'id':
             output.write(str(dic[op[1]]))
         elif op_type == 'for':
-            v,l,ops = op[1]
-            for element in dic[l]:
-                dic[v] = element
+            var,lst,ops = op[1]
+            for element in dic[lst]:
+                dic[var] = element
                 solve(ops,dic,output)
-            dic.pop(v)
+            dic.pop(var)
+        elif op_type == 'if':
+            condition,ifops,elseops = op[1]
+            if(evaluate_bool_expression(condition,dic)):
+                solve(ifops,dic,output)
+            else:
+                solve(elseops,dic,output)
+
 
 solve(ast,dic,f_output)
 
