@@ -105,6 +105,36 @@ def evaluate_bool_expression(condition,dic):
 
     return False
 
+def evaluate_expression(exp,dic):
+    op_type = exp[0]
+
+    if(op_type == 'id'):
+        return dic.get(exp[1])
+
+    if(op_type == 'num'):
+        try:
+            result = int(exp[1])
+        except:
+            result = float(exp[1])
+        return result
+
+    right = evaluate_expression(exp[1][0],dic)
+    left = evaluate_expression(exp[1][1],dic)
+
+    if(op_type == 'add'):
+        return right + left
+
+    if(op_type == 'sub'):
+        return right - left
+
+    if(op_type == 'mult'):
+        return right * left
+
+    if(op_type == 'div'):
+        return right / left
+
+    return None
+
 level = -1
 def solve(ast,dic,output):
     global level
@@ -135,6 +165,9 @@ def solve(ast,dic,output):
                 solve(ifops,dic,output)
             else:
                 solve(elseops,dic,output)
+        elif op_type == 'assign':
+            var,exp = op[1]
+            dic[var] = evaluate_expression(exp,dic)
     level = level - 1
 
 solve(ast,dic,f_output)

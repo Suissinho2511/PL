@@ -53,7 +53,7 @@ Op	: ForBlock
 	| $ FormattedStr ;
 	| IfBlock
 
-	| VarManipulation
+	| VarManipulation ;
 	| while
 """
 def p_op_forblock(p):
@@ -69,16 +69,19 @@ def p_op_ifblock(p):
 	p[0] = p[1]
 
 def p_op_varmanipulation(p):
-	'Op : VarManipulation'
+	'Op : VarManipulation SEMICOLLON'
+	p[0] = p[1]
 
 def p_op_while(p):
 	'Op : WhileBlock'
+	p[0] = p[1]
 
 
 """
 FormattedStr	: FormattedStr STR $
 				| FormattedStr ID $
-				| 
+				| FormattedStr NUM $
+				|
 """
 def p_formattedstr_str(p):
 	'FormattedStr : FormattedStr STR FORMATTEDSTRINGDELIMITER'
@@ -151,9 +154,57 @@ def p_condition_ID(p):
 
 
 """
+VarManipulation : ID = Expression
 """
+#def p_varmanipulation(p):
+#	'VarManipulation : ID EQUAL Expression'
+#	print('VarManipulation : ID EQUAL Expression')
+#	p[0] = [('assign',(p[1],p[3]))]
+#	print(p[0])
+
 def p_varmanipulation(p):
-	'VarManipulation : '
+	'VarManipulation : ID EQUAL Expression'
+	p[0] = [('assign',(p[1],p[3]))]
+
+
+"""
+Expression : ...
+"""
+def p_expression_plus(p):
+	'Expression : Expression PLUS Term'
+	p[0] = ('add',(p[1],p[3]))
+	
+def p_expression_minus(p):
+	'Expression : Expression MINUS Term'
+	p[0] = ('sub',(p[1],p[3]))
+	
+def p_expression_term(p):
+	'Expression : Term'
+	p[0] = p[1]
+	
+def p_term_mult(p):
+	'Term : Term MULT Factor'
+	p[0] = ('mult',(p[1],p[3]))
+	
+def p_term_div(p):
+	'Term : Term DIV Factor'
+	p[0] = ('div',(p[1],p[3]))
+	
+def p_term_factor(p):
+	'Term : Factor'
+	p[0] = p[1]
+	
+def p_factor_expression(p):
+	'Factor : OPARENTHESIS Expression CPARENTHESIS'
+	p[0] = p[2]
+	
+def p_factor_num(p):
+	'Factor : NUM'
+	p[0] = ('num',p[1])
+	
+def p_factor_id(p):
+	'Factor : ID'
+	p[0] = ('id',p[1])
 
 
 """
@@ -161,10 +212,10 @@ WhileBlock	: WHILE OPARENTHESIS BoolExpression CPARENTHESIS Op
 			| WHILE OPARENTHESIS BoolExpression CPARENTHESIS OCURLYBRACKETS ListOps CCURLYBRACKETS
 """
 def p_whileblock_single(p):
-	'WhileBlock : WHILE OPARENTHESIS ID CPARENTHESIS Op'
+	'WhileBlock : WHILE OPARENTHESIS Condition CPARENTHESIS Op'
 
 def p_whileblock_mult(p):
-	'WhileBlock : WHILE OPARENTHESIS ID CPARENTHESIS OCURLYBRACKETS ListOps CCURLYBRACKETS'
+	'WhileBlock : WHILE OPARENTHESIS Condition CPARENTHESIS OCURLYBRACKETS ListOps CCURLYBRACKETS'
 
 
 

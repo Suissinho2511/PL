@@ -37,6 +37,10 @@ if(bool)for(apple: apples)$apple$"\n"$;else{$"no apples :(\n"$;}if(oranges)for(o
 arithmetic:
 /===
 
+a = 2;
+b = (a+1) * 3;
+
+$"( "$a$" + 1 ) * 3 = "$b$;
 
 
 ===/

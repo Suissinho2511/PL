@@ -1,73 +1,4 @@
 
-
-
-"""
-Sections    : Sections Section
-            | Sections TEXT
-            | 
-"""
-def p_sections_section(p):
-    'Sections : Sections Section'
-
-def p_sections_text(p):
-    'Sections : Sections TEXT'
-
-def p_sections_empty(p):
-    'Sections : '
-
-
-"""
-Section : "/**" SectionContent "**/"
-"""
-def p_section(p):
-    'Section : "/**" SectionContent "**/"'
-
-
-"""
-SectionContent  : ListOps
-"""
-def p_sectioncontent(p):
-    'SectionContent : ListOps'
-
-
-"""
-ListOps : ListOps Op ";"
-        | ListOps Comment
-        | 
-"""
-def p_listops_op(p):
-    'ListOps : ListOps Op ";"'
-
-def p_listops_comment(p):
-    'ListOps : ListOps Comment'
-
-def p_listops_empty(p):
-    'ListOps : '
-
-
-"""
-Op  : VarDeclaration
-    | VarManipulation
-    | IfBlock
-    | ForBlock
-    | FormattedStr
-"""
-def p_op_vardeclaration(p):
-    'Op : VarDeclaration'
-
-def p_op_varmanipulation(p):
-    'Op : VarManipulation'
-
-def p_op_ifblock(p):
-    'Op : IfBlock'
-
-def p_op_forblock(p):
-    'Op : ForBlock'
-
-def p_op_formattedstr(p):
-    'Op : FormattedStr'
-
-
 """
 VarDeclaration  : Type ID
                 | Type ID "=" Var
@@ -109,21 +40,6 @@ def p_var_list(p):
 
 def p_var_dict(p):
     'Var : Dict'
-
-
-"""
-FormattedStr    : FormattedStr "$" STR "$"
-                | FormattedStr "$" ID "$"
-                | 
-"""
-def p_formattedstr_str(p):
-    'FormattedStr : FormattedStr "$" STR "$"'
-
-def p_formattedstr_id(p):
-    'FormattedStr : FormattedStr "$" ID "$"'
-
-def p_formattedstr_empty(p):
-    'FormattedStr : '
 
 
 """
@@ -222,64 +138,9 @@ def p_right_dict(p):
     'Right : Dict'
 
 
-"""
-IfBlock : "if(" Condition ")" Op
-        | "if(" Condition ")" "{" ListOps "}"
-        | "if(" Condition ")" Op ElseBlock
-        | "if(" Condition ")" "{" ListOps "}" ElseBlock
-"""
-def p_ifblock_ifsingle(p):
-    'IfBlock : "if(" Condition ")" Op'
-    
-def p_ifblock_ifmult(p):
-    'IfBlock : "if(" Condition ")" "{" ListOps "}"'
-    
-def p_ifblock_ifsingle_else(p):
-    'IfBlock : "if(" Condition ")" Op ElseBlock'
-    
-def p_ifblock_ifmult_else(p):
-    'IfBlock : "if(" Condition ")" "{" ListOps "}" ElseBlock'
 
 
-"""
-ElseBlock   : "else" Op
-            | "else" "{" ListOps "}"
-"""
-def p_elseblock_single(p):
-    'ElseBlock : "else" Op'
-    
-def p_elseblock_mult(p):
-    'ElseBlock : "else" "{" ListOps "}"'
-    
 
-"""
-ForBlock    : "for(" ID ":" ID ")" Op
-            | "for(" ID ":" ID ")" "{" ListOps "}"
-            | "for(" ListVarDeclaration ";" Condition ";" ListVarManipulation ")" Op
-            | "for(" ListVarDeclaration ";" Condition ";" ListVarManipulation ")" "{" ListOps "}"
-"""
-def p_forblock_iterate_single(p):
-    'ForBlock : "for(" ID ":" ID ")" Op'
-    
-def p_forblock_iterate_mult(p):
-    'ForBlock : "for(" ID ":" ID ")" "{" ListOps "}"'
-    
-def p_forblock_loop_single(p):
-    'ForBlock : "for(" ListVarDeclaration ";" Condition ";" ListVarManipulation ")" Op'
-    
-def p_forblock_loop_mult(p):
-    'ForBlock : "for(" ListVarDeclaration ";" Condition ";" ListVarManipulation ")" "{" ListOps "}"'
-
-
-"""
-Comment : "//" COMMENTLINE
-        | "/*" COMMENTBLOCK "*/"
-"""
-def p_comment_single(p):
-    'Comment : "//" COMMENTLINE'
-    
-def p_comment_mult(p):
-    '"/*" COMMENTBLOCK "*/"'
 
 
 """

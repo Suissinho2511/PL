@@ -19,3 +19,4 @@ no oranges :(
 
 
 arithmetic:
+( 2.1 + 1 ) * 3 = 9.3
