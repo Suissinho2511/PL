@@ -24,8 +24,17 @@ reserved = {
 	'-'		:	'MINUS',
 	'*'		:	'MULT',
 	'/'		:	'DIV',
-	#'['		:	'OSQUAREBRACKETS',
-	#']'		:	'CSQUAREBRACKETS',
+	'||'	:	'OR',
+	'&&'	:	'AND',
+	'!'		:	'NOT',
+	'>'		:	'GT',
+	'<'		:	'LT',
+	'>='	:	'GE',
+	'<='	:	'LE',
+	'=='	:	'EQ',
+	'!='	:	'NEQ',
+	'['		:	'OSQUAREBRACKETS',
+	']'		:	'CSQUAREBRACKETS',
 }
 tokens = ['TEXT', 'STR', 'ID', 'NUM', 'COMMENTLINE', 'COMMENTBLOCK'] + list(reserved.values())
 literals = []
@@ -33,9 +42,6 @@ literals = []
 states = [
 	('section','exclusive'),
 	('commentblock','exclusive'),
-	('for','exclusive'),
-	('if','exclusive'),
-	('while','exclusive'),
 ]
 
 ### INITIAL
@@ -44,12 +50,12 @@ t_ignore = ''
 def t_SECTIONBEGIN(t):
 	r'/==='
 	t.lexer.begin('section')
-	print(t)
+	#print(t)
 	return t;
 
 def t_TEXT(t):
-	r'((?!/===)(.|\n))+'
-	print(t)
+	r'((?!/===)(.|\s))+'
+	#print(t)
 	return t
 
 
@@ -58,109 +64,170 @@ t_section_ignore = ' \n\t\r'
 
 def t_section_FOR(t):
 	r'for'
-	t.lexer.begin('for')
-	print(t)
+	#print(t)
 	return t;
 
 def t_section_IF(t):
 	r'if'
-	t.lexer.begin('if')
-	print(t)
+	#print(t)
 	return t
 
 def t_section_WHILE(t):
 	r'while'
-	t.lexer.begin('while')
-	print(t)
+	#print(t)
 	return t
 	
 def t_section_SECTIONEND(t):
 	r'===/'
 	t.lexer.begin('INITIAL')
-	print(t)
+	#print(t)
 	return t;
 	
 def t_section_COMMENTBEGIN(t):
 	r'/\*'
 	t.lexer.push_state('commentblock')
-	print(t)
+	#print(t)
 	#return t;
-
-def t_section_FORMATTEDSTRINGDELIMITER(t):
-	r'\$'
-	print(t)
-	return t
 
 def t_section_STR(t):
 	r'\"(?P<content>.*?)\"(?=\s*\$)'
 	t.value = t.lexer.lexmatch.group('content')
-	print(t)
+	#print(t)
 	return t
 
 def t_section_ID(t):
 	r'[a-zA-Z_]\w*'
 	t.type = reserved.get(t.value, 'ID')
-	print(t)
+	#print(t)
 	return t
 
 def t_section_NUM(t):
-	r'[\-]?\d+(\.\d+)?'
-	print(t)
+	r'\d+(\.\d+)?'
+	#print(t)
 	return t
 
 def t_section_COMMENTLINE(t):
 	r'//[^\n]+'
-	print(t)
+	#print(t)
 	#return t
+
+
+### SYMBOLS
+
+def t_section_FORMATTEDSTRINGDELIMITER(t):
+	r'\$'
+	#print(t)
+	return t
 
 def t_section_SEMICOLLON(t):
 	r';'
-	print(t)
+	#print(t)
 	return t
 
 def t_section_OCURLYBRACKETS(t):
 	r'{'
-	print(t)
+	#print(t)
 	return t
 
 def t_section_CCURLYBRACKETS(t):
 	r'}'
-	print(t)
+	#print(t)
 	return t
 
-def t_section_EQUAL(t):
-	r'='
-	print(t)
+def t_section_COLLON(t):
+	r':'
+	#print(t)
 	return t
 
 def t_section_PLUS(t):
 	r'\+'
-	print(t)
+	#print(t)
 	return t
 
 def t_section_MINUS(t):
 	r'-'
-	print(t)
+	#print(t)
 	return t
 
 def t_section_MULT(t):
 	r'\*'
-	print(t)
+	#print(t)
 	return t
 
 def t_section_DIV(t):
 	r'/'
-	print(t)
+	#print(t)
 	return t
 
 def t_section_OPARENTHESIS(t):
 	r'\('
-	print(t)
+	#print(t)
 	return t
 
 def t_section_CPARENTHESIS(t):
 	r'\)'
-	print(t)
+	#print(t)
+	return t
+
+def t_section_OR(t):
+	r'\|\|'
+	#print(t)
+	return t
+
+def t_section_AND(t):
+	r'&&'
+	#print(t)
+	return t
+
+
+def t_section_GT(t):
+	r'>'
+	#print(t)
+	return t
+
+def t_section_LT(t):
+	r'<'
+	#print(t)
+	return t
+
+def t_section_GE(t):
+	r'>='
+	#print(t)
+	return t
+
+def t_section_LE(t):
+	r'<='
+	#print(t)
+	return t
+
+def t_section_EQ(t):
+	r'=='
+	#print(t)
+	return t
+
+def t_section_NEQ(t):
+	r'!='
+	#print(t)
+	return t
+
+def t_section_NOT(t):
+	r'!'
+	#print(t)
+	return t
+
+def t_section_EQUAL(t):
+	r'='
+	#print(t)
+	return t
+
+def t_section_OSQUAREBRACKETS(t):
+	r'\['
+	#print(t)
+	return t
+
+def t_section_CSQUAREBRACKETS(t):
+	r'\]'
+	#print(t)
 	return t
 
 
@@ -168,89 +235,14 @@ def t_section_CPARENTHESIS(t):
 
 def t_commentblock_COMMENTEND(t):
 	r'\*/'
-	print(t)
+	#print(t)
 	t.lexer.pop_state()
 	#return t;
 
 def t_commentblock_COMMENTBLOCK(t):
-	r'(.|\n)+(?=\*/)'
-	print(t)
+	r'(\s|.)+?(?=\*/)'
+	#print(t)
 	#return t
-
-
-### FOR
-t_for_ignore = ' \n\t\r'
-
-def t_for_ID(t):
-	r'[a-zA-Z_]\w*'
-	print(t)
-	return t
-
-def t_for_OPARENTHESIS(t):
-	r'\('
-	print(t)
-	return t
-
-def t_for_CPARENTHESIS(t):
-	r'\)'
-	t.lexer.begin('section')
-	print(t)
-	return t
-
-def t_for_COLLON(t):
-	r':'
-	print(t)
-	return t
-
-
-### IF
-t_if_ignore = ' \n\t\r'
-
-def t_if_ID(t):
-	r'[a-zA-Z_]\w*'
-	print(t)
-	return t
-
-def t_if_NUM(t):
-	r'[\-]?\d+(\.\d+)?'
-	print(t)
-	return t
-
-def t_if_OPARENTHESIS(t):
-	r'\('
-	print(t)
-	return t
-
-def t_if_CPARENTHESIS(t):
-	r'\)'
-	t.lexer.begin('section')
-	print(t)
-	return t
-
-
-### WHILE
-t_while_ignore = ' \n\t\r'
-
-def t_while_ID(t):
-	r'[a-zA-Z_]\w*'
-	print(t)
-	return t
-
-def t_while_NUM(t):
-	r'[\-]?\d+(\.\d+)?'
-	print(t)
-	return t
-
-def t_while_OPARENTHESIS(t):
-	r'\('
-	print(t)
-	return t
-
-def t_while_CPARENTHESIS(t):
-	r'\)'
-	t.lexer.begin('section')
-	print(t)
-	return t
 
 
 
