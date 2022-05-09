@@ -1,51 +1,174 @@
-for:
+
+
+=== Start Guide ===
+
+The objective of this (overcomplicated) language is to (kinda) allow for code execution inside a text file, whose output is written to the final text. I'll explain:
+
+Let's say you hate your friends and want to do something like:
+
+> Diogo is an idiot!
+> Vasco is an idiot!
+> Duarte is an idiot!
+...
+
+However, unlike me, you have a lot of friends (whose names you conviniently provided in the YAML file). It would be a pain in the ass to write all of it manually. As such, we introduce: *PUT NAME OF WHATEVER THIS IS HERE*!!
+
+Just write /===$"/==="$;===/ to begin a 'Section' where you will put the code, and don't forget to close it with ===/. Now, with a (not so) simple for loop like...
+
+for (friend : friends)
+	$ "> " $ friend $ " is an idiot!\n" $;
+
+... you will get the output you need :]
+
+Too hard?
+Don't be a little bitch and read the rest, where we'll show you all you can do inside the 'Sections' we talked about.
+Good luck!!
+
+
+
+
+=== Comments ===
+
+Very usefull to hide the ugly code you'll write. You're welcome.
+
+// Comment
+
+/* Multi
+	Line
+		Comment */
+
+/=== // You shouldn't be seeing this >:(
+
+		/* 	hello
+			there */
+===/
+
+
+
+=== Var declaration & manipulation ===
+
+Can you do stuff like this?
+
+a = 3;
+b = ((a+1) * 3) * a;
+
+Of course!
+Actually, here's the solution: /===a=3;b=((a+1)*3)*a;$b$;===/
+
+Because it runs on python, you can even add lists ( i think :P ).
+Other than that, there are the usual operations: +, -, *, /
+
+
+=== Print to output (formatted strings) ===
+
+What you put between $ ... $ will be printed to final file. In more detail:
+
+$ "Hello World" $		-> Hello World
+$ "Hello" $ "World" $	-> HelloWorld
+
+H = "Hello";
+$ H $ "World" $			-> HelloWorld
+
+$ 69 * 1000 + 420 $		-> :)
+
+Ya know how it goes...
+
+Oh, \t, \n, etc... are translated to actual tabs and newlines, but you have to put them in the string!
+And remember to put \" for a literal "!
+
+vvvv
+/=== // Just showing I'm not lying
+$ "Hello World" $;		//-> Hello World
+$ "Hello" $ "World" $;	//-> HelloWorld
+
+H = "Hello";
+$ H $ "World" $;		//-> HelloWorld
+
+$ 69 * 1000 + 420 $;	//-> :)
+===/
+^^^^
+
+
+
+=== for ===
+
+Iterate over lists, or dictionary keys, just like python :D
+
+for ( element : list ) {
+	...
+}
+
 /===
 
 for(author:authors)
-	// for(age:ages)
-		$ "<p class=\"author\">" $ author $ "\t" $ "</p>\n" $;
-		/* fuck me in the ass
-		cause I love Jesus */
-===/
+	$ "<p class=\"author\">" $ author $ "</p>\n" $;
 
-for em bloco:
-/===
-
+a=1;
 for(age:ages) {
-	$ "AAAA" $;
-$ "\t" $ age $ "\n" $;
+	$ "\n"$ a $;
+	$ ":\t" $ age $;
+	a = a + 1;
 }
 
 ===/
 
-for aninhado:
+
+
+=== Nested for ===
+
+Obviously, you can put fors inside fors, dummy.
+
+To access a dictionary value, while you are iterating the keys, we *allowed* you to do 'dict[key]' (in that exact syntax (with only a depth of one (that means that you can't do stuff like matrix[x][y] (Just do line=matrix[x];collumn=line[y] like a peasant)))).
+
 /===
 
 for( group:groups) {
+	$group$":\n"$;
 	group1 = groups[group];
-	$group1$;
-	group2 = group1[0];
-	$group2$;
-	/*for(element: group1) {
-		$group$":"$ element $"\n"$;
-	}*/
+	for(element: group1)
+		$"\t"$ element $"\n"$;
 }
 
 ===/
 
-if&else:
+
+
+=== if & else ===
+
+Like any other language:
+
+if ( good ol' bool expression )
+	...
+else <- optional
+	...
+
+You can use the usual: &&, ||, !, ==, !=, <, >, <=, >=
+
+Stuff between parenthesis takes priority. Then the comparisons and !. Then && and ||. This bool stuff is kinda scuffed.
+Condition can't be a number (just do number != 0), if that's what you want. However num=1;if(num); is a thing xD
+Putting a list's or dictionary's ID as the condition is a good way to check for it's existence.
+
 /===
 
-if(bool)for(apple: apples)$apple$"\n"$;else{$"no apples :(\n"$;}if(oranges)for(orange:oranges)$orange$"\n"$;else$"no oranges :(\n"$;
+if(apples)for(apple: apples)$apple$"\n"$;else{$"no apples :(\n"$;}if(oranges)for(orange:oranges)$orange$"\n"$;else$"no oranges :(\n"$;
+if(!bool)$"no maidens >:)"$;
 
 ===/
 
-arithmetic:
+
+
+=== While ===
+
+It's an if... but in a loop :O
+
+while ( something && (otherthing || nothing) )
+	...
+
 /===
 
 a = 0;
 
-while(a<10) {
+while(!a>10) {
 	b = (a+1) * 3;
 	$"( "$a$" + 1 ) * 3 = "$b$"\n"$;
 	a = a+1;

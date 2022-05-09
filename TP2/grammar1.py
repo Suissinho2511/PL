@@ -81,13 +81,17 @@ FormattedStr	: FormattedStr STR $
 				| FormattedStr ID $
 				|
 """
-def p_formattedstr_str(p):
-	'FormattedStr : FormattedStr STR FORMATTEDSTRINGDELIMITER'
-	p[0] = p[1] + [('str', p[2])]
+def p_formattedstr_exp(p):
+	'FormattedStr : FormattedStr Expression FORMATTEDSTRINGDELIMITER'
+	p[0] = p[1] + [('exp', p[2])]
 
-def p_formattedstr_id(p):
-	'FormattedStr : FormattedStr ID FORMATTEDSTRINGDELIMITER'
-	p[0] = p[1] + [('id', p[2])]
+#def p_formattedstr_str(p):
+#	'FormattedStr : FormattedStr STR FORMATTEDSTRINGDELIMITER'
+#	p[0] = p[1] + [('str', p[2])]
+#
+#def p_formattedstr_id(p):
+#	'FormattedStr : FormattedStr ID FORMATTEDSTRINGDELIMITER'
+#	p[0] = p[1] + [('id', p[2])]
 
 def p_formattedstr_empty(p):
 	'FormattedStr : '
@@ -195,7 +199,8 @@ def p_boolterm_boolfactor(p):
 	p[0] = p[1]
 
 def p_boolterm_notboolfactor(p):
-	'BoolTerm : NOT BoolFactor'
+	'BoolTerm : NOT BoolTerm'
+	#'BoolTerm : NOT BoolFactor'
 	p[0] = ('not',p[2])
 	
 def p_boolfactor_boolexpression(p):

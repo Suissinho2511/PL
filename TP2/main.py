@@ -186,6 +186,9 @@ def solve(ast,dic,output):
         elif op_type == 'id':
             output.write(str(dic[op[1]]))
 
+        elif op_type == 'exp':
+            output.write(format(str(evaluate_expression(op[1],dic))))
+
         elif op_type == 'for':
             var,lst,ops = op[1]
             for element in dic[lst]:

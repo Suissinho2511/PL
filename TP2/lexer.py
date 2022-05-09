@@ -89,8 +89,14 @@ def t_section_COMMENTBEGIN(t):
 	#print(t)
 	#return t;
 
+#def t_section_STR(t):
+#	r'\"(?P<content>.*?)\"(?=\s*\$)'
+#	t.value = t.lexer.lexmatch.group('content')
+#	#print(t)
+#	return t
+
 def t_section_STR(t):
-	r'\"(?P<content>.*?)\"(?=\s*\$)'
+	r'\"(?P<content>.*?)(?<!\\)\"'
 	t.value = t.lexer.lexmatch.group('content')
 	#print(t)
 	return t
