@@ -2,6 +2,11 @@
 
 desktop.ini
 
+#Ficheiros gerados pelo yacc
+
+TP2/parser.out
+TP2/parsetab.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
