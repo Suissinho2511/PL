@@ -63,7 +63,7 @@ Op	: ForBlock
 	| $ FormattedStr ;
 	| IfBlock
 	| VarManipulation ;
-	| while
+	| WhileBlock
 """
 
 
@@ -93,8 +93,7 @@ def p_op_while(p):
 
 
 """
-FormattedStr	: FormattedStr STR $
-				| FormattedStr ID $
+FormattedStr	: FormattedStr Expression $
 				|
 """
 
@@ -102,14 +101,6 @@ FormattedStr	: FormattedStr STR $
 def p_formattedstr_exp(p):
     'FormattedStr : FormattedStr Expression FORMATTEDSTRINGDELIMITER'
     p[0] = p[1] + [('exp', p[2])]
-
-# def p_formattedstr_str(p):
-#	'FormattedStr : FormattedStr STR FORMATTEDSTRINGDELIMITER'
-#	p[0] = p[1] + [('str', p[2])]
-#
-# def p_formattedstr_id(p):
-#	'FormattedStr : FormattedStr ID FORMATTEDSTRINGDELIMITER'
-#	p[0] = p[1] + [('id', p[2])]
 
 
 def p_formattedstr_empty(p):
@@ -134,30 +125,30 @@ def p_forblock_iterate_mult(p):
 
 
 """
-IfBlock	: if ( Condition ) Op
-		| if ( Condition ) { ListOps }
-		| if ( Condition ) Op ElseBlock
-		| if ( Condition ) { ListOps } ElseBlock
+IfBlock	: if ( BoolExpression ) Op
+		| if ( BoolExpression ) { ListOps }
+		| if ( BoolExpression ) Op ElseBlock
+		| if ( BoolExpression ) { ListOps } ElseBlock
 """
 
 
 def p_ifblock_ifsingle(p):
-    'IfBlock : IF OPARENTHESIS Condition CPARENTHESIS Op'
+    'IfBlock : IF OPARENTHESIS BoolExpression CPARENTHESIS Op'
     p[0] = [('if', (p[3], p[5], []))]
 
 
 def p_ifblock_ifmult(p):
-    'IfBlock : IF OPARENTHESIS Condition CPARENTHESIS OCURLYBRACKETS ListOps CCURLYBRACKETS'
+    'IfBlock : IF OPARENTHESIS BoolExpression CPARENTHESIS OCURLYBRACKETS ListOps CCURLYBRACKETS'
     p[0] = [('if', (p[3], p[6], []))]
 
 
 def p_ifblock_ifsingle_else(p):
-    'IfBlock : IF OPARENTHESIS Condition CPARENTHESIS Op ElseBlock'
+    'IfBlock : IF OPARENTHESIS BoolExpression CPARENTHESIS Op ElseBlock'
     p[0] = [('if', (p[3], p[5], p[6]))]
 
 
 def p_ifblock_ifmult_else(p):
-    'IfBlock : IF OPARENTHESIS Condition CPARENTHESIS OCURLYBRACKETS ListOps CCURLYBRACKETS ElseBlock'
+    'IfBlock : IF OPARENTHESIS BoolExpression CPARENTHESIS OCURLYBRACKETS ListOps CCURLYBRACKETS ElseBlock'
     p[0] = [('if', (p[3], p[6], p[8]))]
 
 
@@ -175,16 +166,6 @@ def p_elseblock_single(p):
 def p_elseblock_mult(p):
     'ElseBlock : ELSE OCURLYBRACKETS ListOps CCURLYBRACKETS'
     p[0] = p[3]
-
-
-"""
-Condition	: BoolExpression
-"""
-
-
-def p_condition_boolexpression(p):
-    'Condition : BoolExpression'
-    p[0] = p[1]
 
 
 """
@@ -352,6 +333,11 @@ def p_whileblock_single(p):
 def p_whileblock_mult(p):
     'WhileBlock : WHILE OPARENTHESIS BoolExpression CPARENTHESIS OCURLYBRACKETS ListOps CCURLYBRACKETS'
     p[0] = [('while', (p[3], p[6]))]
+
+
+
+
+
 
 
 def p_error(p):
