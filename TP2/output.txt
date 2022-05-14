@@ -59,13 +59,17 @@ Other than that, there are the usual operations: +, -, *, /
 
 What you put between $ ... $ will be printed to final file. In more detail:
 
-$ "Hello World" $		-> Hello World
-$ "Hello" $ "World" $	-> HelloWorld
+$ "Hello World" $
+$ "Hello " $ "World" $
+$ "Hello " + "World" $
 
-H = "Hello";
-$ H $ "World" $			-> HelloWorld
+H = "Hello "
+W = "World";
+$ H $ W $ "\n" $
 
-$ 69 * 1000 + 420 $		-> :)
+$ 69 * 1000 + 420 $
+
+$ "A" * 20 $
 
 Ya know how it goes...
 
@@ -73,7 +77,12 @@ Oh, \t, \n, etc... are translated to actual tabs and newlines, but you have to p
 And remember to put \" for a literal "!
 
 vvvv
-Hello WorldHelloWorldHelloWorld69420
+Hello World
+Hello World
+Hello World
+Hello World
+69420
+AAAAAAAAAAAAAAAAAAAA
 ^^^^
 
 
