@@ -36,8 +36,6 @@ yaml_content = f_yaml.read()
 
 # parse files
 
-lexer.input(content)
-
 dic = yaml.load(yaml_content, Loader=Loader)
 
 ast = parser.parse(content)

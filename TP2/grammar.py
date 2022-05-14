@@ -320,8 +320,8 @@ def p_factor_str(p):
 
 
 """
-WhileBlock	: WHILE OPARENTHESIS BoolExpression CPARENTHESIS Op
-			| WHILE OPARENTHESIS BoolExpression CPARENTHESIS OCURLYBRACKETS ListOps CCURLYBRACKETS
+WhileBlock	: while ( BoolExpression ) Op
+			| while ( BoolExpression ) { ListOps }
 """
 
 
