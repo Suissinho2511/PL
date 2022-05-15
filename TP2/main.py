@@ -39,6 +39,7 @@ yaml_content = f_yaml.read()
 dic = yaml.load(yaml_content, Loader=Loader)
 
 ast = parser.parse(content)
+#print(ast)
 
 # solve
 
@@ -108,7 +109,7 @@ def evaluate_expression(exp, dic):
 		return exp[1]
 
 	if(op_type == 'index'):
-		return dic[exp[1][0]][evaluate_expression(exp[1][1], dic)]
+		return dic[exp[1][0]].get(evaluate_expression(exp[1][1], dic), None)
 
 	left = evaluate_expression(exp[1][0], dic)
 	right = evaluate_expression(exp[1][1], dic)

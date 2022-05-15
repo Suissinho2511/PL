@@ -1,0 +1,20 @@
+document:
+  l1:
+    - a
+    - b
+    - c
+  l2:
+    - d
+    - e
+    - f
+    - g
+
+details:
+  a:
+    name: John Smith
+    age: 26
+
+  f:
+    length: 24cm
+    width: 6cm
+    notes: Mildly Scratched

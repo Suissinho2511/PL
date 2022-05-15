@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+/===
+
+id = 0;
+
+for ( list_name : document) {
+
+	$ "\t<list id=" $ list_name $ ">\n" $; // start list
+
+	list = document[list_name];
+	for ( element : list ) { // for every element in list:
+
+		details_element = details[element];
+
+		if ( !details_element ) {
+
+			// no details:
+			$ "\t\t<element id=" $ id $ "> " $ element $ " </element>\n" $;
+		
+		} else {
+
+			// has details:
+			$ "\t\t<element id=" $ id $ "> " $ element $ "\n" $;
+
+			for ( detail : details_element ) // enumerate details:
+				$ "\t\t\t<" $ detail $ "> " $ details_element[detail] $ " </" $ detail $ ">\n" $;
+
+			$ "\t\t</element>\n" $;
+		}
+
+		id = id + 1;
+	}
+
+	$ "\t</list>\n" $; // end list
+}
+
+===/</document>

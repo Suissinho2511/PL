@@ -37,6 +37,7 @@ t_section_ignore = ' \n\t\r'
 
 t_section_FOR						= r'for'
 t_section_IF						= r'if'
+t_section_ELSE						= r'else'
 t_section_WHILE						= r'while'
 t_section_NUM						= r'\d+(\.\d+)?'
 t_section_FORMATTEDSTRINGDELIMITER	= r'\$'
